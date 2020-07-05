@@ -1,6 +1,6 @@
-#include <iostream>
-//step.cpp(C++'s step.c)
-
+#include <stdio.h>
+#include <float.h>
+//It's have a CPlusPlus edition
 
 
 long double step_add(long double max)  //max must be float
@@ -18,5 +18,8 @@ long double step_add(long double max)  //max must be float
 
 int main()
 {
+
+
 	return 0;
+
 }
