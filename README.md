@@ -1,18 +1,15 @@
-[Matics](#Matics)
-
-[Lastest version](##Lastest-version)
-
-[Usage](##Usage)
-
-[Step1](###Step1)
-
-[Step2](###Step2)
-
-[Examples](##Examples)
-
-[Thanks-For-Who](##Thanks-For-Who)
 # Matics
 Matics is a math module. As the author has not translated the notes into English for the time being, please forgive me. But it's a bit good.
+
+## Table of Contents
+- [Matics](#Matics)
+- [Lastest version](#Lastest-version)
+- [Usage](#Usage)
+  - [Step1](#Step1)
+  - [Step2](#Step2)
+- [Examples](#Examples)
+- [Thanks-For-Who](#Thanks-For-Who)
+
 ## Latest-version
 * 1.3.0
 * 1.3.1
