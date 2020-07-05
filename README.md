@@ -10,22 +10,26 @@ Matics is a math module. As the author has not translated the notes into English
 - [Examples](#Examples)
 - [Thanks-For-Who](#Thanks-For-Who)
 
-## Latest-version
-* 1.3.0
-* 1.3.1
+## Latest Version
+- 1.3.0
+- 1.3.1
+
 ## Usage
 If you want to use past versions of this project, unzip the corresponding tar.xz file: `matics-+{desired_version}.tar.xz`
+
 ### Step1:
 ```
 python func1setup.py build_ext --inplace
 python factorsetup.py build_ext --inplace
 ```
+
 ### Step2:
 ```
 python class1.py
 python useful.py
 python main.py
 ```
+
 ## Examples
 ```
 >>> import matics.main as m 
@@ -49,7 +53,8 @@ python main.py
 
 [1, 2, 3, 4, 6, 12]
 ```
-Author's email is guozhenduo1@163.com . Welcome!!!
+Author's email is [guozhenduo1@163.com](mailto:guozhenduo1@163.com). Welcome!!!
+
 ## *Thanks-For-Who*
-I would like to thank Bangyen for making this project better
+I would like to thank Bangyen for making this project better.
 
