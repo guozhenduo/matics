@@ -14,6 +14,7 @@ Matics is a math module. As the author has not translated the notes into English
 ## Latest Version
 - 1.3.0
 - 1.3.1
+- 1.3.2rc1
 
 ## Usage
 If you want to use past versions of this project, unzip the corresponding tar.xz file: `matics-+{desired_version}.tar.xz`
