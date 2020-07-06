@@ -21,6 +21,7 @@ try:
             if l == ' ':
                 break
                 exit()
+
 except:
     print("Please inspect")
     exit()
