@@ -1,5 +1,5 @@
 def composite(s):
-	list_a= []
+	list_a = []
 	for i in range(2, s + 1):
 		for j in range(2, i):
 			if i % j == 0 :
