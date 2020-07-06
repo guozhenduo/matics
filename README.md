@@ -9,6 +9,7 @@ Matics is a math module. As the author has not translated the notes into English
   - [Step2](#Step2)
 - [Examples](#Examples)
 - [Thanks-For-Who](#Thanks-For-Who)
+- [FAQ](#FAQ)
 
 ## Latest Version
 - 1.3.0
@@ -57,4 +58,7 @@ Author's email is [guozhenduo1@163.com](mailto:guozhenduo1@163.com). Welcome!!!
 
 ## *Thanks-For-Who*
 I would like to thank Bangyen for making this project better.
+## **FAQ**
 
+1. Can I contribute?
+ -That's for sure.As long as your code helps.
