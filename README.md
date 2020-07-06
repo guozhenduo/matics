@@ -64,3 +64,7 @@ I would like to thank Bangyen for making this project better.
 1. Can I contribute?
 
  - That's for sure.As long as your code helps.
+
+2. Which version is the most mature?
+
+ - 1.3.1
