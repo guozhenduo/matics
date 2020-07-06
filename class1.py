@@ -137,3 +137,6 @@ class Equation:
             
                 print(i)
                 i += 1
+class Matrix:
+    def __init__(self):
+        pass
