@@ -22,9 +22,9 @@ Matics is a math module. As the author has not translated the notes into English
 If you want to use past versions of this project, unzip the corresponding tar.xz file: `matics-+{desired_version}.tar.xz`
 
 ## Step1:
-```
-python func1setup.py build_ext --inplace
-python factorsetup.py build_ext --inplace
+```bash
+$ python func1setup.py build_ext --inplace
+$ python factorsetup.py build_ext --inplace
 ```
 
 ## Step2:
@@ -88,3 +88,13 @@ README.md for Chinese
 - [鸣谢](#鸣谢)
 - [计划](#计划)
 - [常见问题回答](#常见问题回答)
+
+#版本
+ - 1.3.0
+ - 1.3.1
+ - 1.3.2rc1
+
+#使用
+如果你想使用过去版本，请解压matics-加版本.tar.xz。
+ ##步骤1
+ 
