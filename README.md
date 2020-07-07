@@ -9,6 +9,7 @@ Matics is a math module. As the author has not translated the notes into English
   - [Step2](##Step2)
 - [Examples](#Examples)
 - [Thanks-For-Who](#Thanks-For-Who)
+- [Plan](#Plan)
 - [FAQ](#FAQ)
 
 ## Latest Version
