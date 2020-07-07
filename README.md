@@ -1,3 +1,4 @@
+README.md for English
 # Matics
 Matics is a math module. As the author has not translated the notes into English for the time being, please forgive me. But it's a bit good.
 
@@ -71,3 +72,5 @@ No plan now.
 2. Which version is the most mature?
 
  - 1.3.1
+
+README.md for Chinese
