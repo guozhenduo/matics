@@ -5,8 +5,8 @@ Matics is a math module. As the author has not translated the notes into English
 - [Matics](#Matics)
 - [Lastest version](#Lastest-version)
 - [Usage](#Usage)
-  - [Step1](#Step1)
-  - [Step2](#Step2)
+  - [Step1](##Step1)
+  - [Step2](##Step2)
 - [Examples](#Examples)
 - [Thanks-For-Who](#Thanks-For-Who)
 - [FAQ](#FAQ)
@@ -16,23 +16,23 @@ Matics is a math module. As the author has not translated the notes into English
 - 1.3.1
 - 1.3.2rc1
 
-## Usage
+# Usage
 If you want to use past versions of this project, unzip the corresponding tar.xz file: `matics-+{desired_version}.tar.xz`
 
-### Step1:
+## Step1:
 ```
 python func1setup.py build_ext --inplace
 python factorsetup.py build_ext --inplace
 ```
 
-### Step2:
+## Step2:
 ```
 python class1.py
 python useful.py
 python main.py
 ```
 
-## Examples
+# Examples
 ```
 >>> import matics.main as m 
 >>> a1 = m.Constant(位数=5)
@@ -57,9 +57,11 @@ python main.py
 ```
 Author's email is [guozhenduo1@163.com](mailto:guozhenduo1@163.com). Welcome!!!
 
-## *Thanks-For-Who*
+# *Thanks-For-Who*
 I would like to thank Bangyen for making this project better.
-## **FAQ**
+# Plan
+No plan now.
+# **FAQ**
 
 1. Can I contribute?
 
