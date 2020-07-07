@@ -28,10 +28,10 @@ $ python factorsetup.py build_ext --inplace
 ```
 
 ## Step2:
-```
-python class1.py
-python useful.py
-python main.py
+```bash
+$ python class1.py
+$ python useful.py
+$ python main.py
 ```
 
 # Examples
@@ -96,5 +96,16 @@ README.md for Chinese
 
 #使用
 如果你想使用过去版本，请解压matics-加版本.tar.xz。
- ##步骤1
+ ##步骤1：
+```bash
+$ python func1setup.py build_ext --inplace
+$ python factorsetup.py build_ext --inplace
+```
+
+## 步骤2:
+```bash
+$ python class1.py
+$ python useful.py
+$ python main.py
+```
  
