@@ -1,5 +1,11 @@
 class Matrix:
   def __init__(self, arr):
+    """
+    Initializes a matrix object with its array representation and dimensions.
+    Raises an error if the passed array is empty or not two dimensional.
+    
+    :param arr: The array representation of the matrix.
+    """
     if not (arr and all(isinstance(k, list) for k in arr)):
       raise IndexError
     self.arr = arr
@@ -7,6 +13,13 @@ class Matrix:
     self.n = len(arr[0])
 
   def __add__(self, other):
+    """
+    Adds the matrices component-wise.
+    Raises an error if the dimensions of the matrices don't match.
+    
+    :param other: The matrix on the right side of the operator.
+    :return: Returns a matrix object of the sum.
+    """
     if self.m != other.m or self.n != other.n:
       raise IndexError
     sum_matrix = [
@@ -16,6 +29,14 @@ class Matrix:
     return Matrix(sum_matrix)
 
   def __mul__(self, other):
+    """
+    Multiplies the matrices, where the ij-th entry of the product
+    is the dot product of the i-th row of self and the j-th column of other.
+    Raises an error if the dimensions of the matrices don't match.
+    
+    :param other: The matrix on the right side of the operator.
+    :return: Returns a matrix object of the product.
+    """
     if self.n != other.m:
       raise IndexError
     prod = [[0] * other.n for _ in range(self.m)]
