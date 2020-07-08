@@ -79,7 +79,7 @@ README.md for Chinese
 # matics（为区别，所以首字母小写）
 “matics”是个数学计算模块，我认为这个模块比较好。
 
-## Table of Contents
+## 目录
 - [版本](#版本)
 - [使用](#使用)
   - [步骤1](##步骤1)
