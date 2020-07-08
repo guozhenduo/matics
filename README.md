@@ -60,7 +60,7 @@ $ python main.py
 Author's email is [guozhenduo1@163.com](mailto:guozhenduo1@163.com). Welcome!!!
 
 # *Thanks-For-Who*
-I would like to thank Bangyen for making this project better.
+I would like to thank [Bangyen](https://github.com/bangyen) for making this project better.
 # Plan
 No plan now.
 # **FAQ**
