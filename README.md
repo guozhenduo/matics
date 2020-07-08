@@ -69,7 +69,7 @@ No plan now.
 
  - That's for sure.As long as your code helps.
 
-2. Which version is the most mature?
+2. Which version is good?
 
  - 1.3.1
 
