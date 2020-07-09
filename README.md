@@ -74,7 +74,7 @@ No plan now.
  - 1.3.1
 
 
-README.md for Chinese
+Chinese README.md
 
 # matics（为区别，所以首字母小写）
 “matics”是个数学计算模块，我认为这个模块比较好。
