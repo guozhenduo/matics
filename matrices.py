@@ -9,7 +9,7 @@ class Matrix:
     if not (arr and all(isinstance(k, list) for k in arr)):
       raise IndexError
     self.arr = arr
-    self.m = len(arr)
+    self.length = len(arr)
     self.n = len(arr[0])
 
   def __add__(self, other):
