@@ -1,4 +1,4 @@
-README.md for English
+README.md  English
 # Matics
 Matics is a math module. As the author has not translated the notes into English for the time being, please forgive me. But it's a bit good.
 
@@ -74,7 +74,7 @@ No plan now.
  - 1.3.1
 
 
-Chinese README.md
+README.md in Chinese
 
 # matics（为区别，所以首字母小写）
 “matics”是个数学计算模块，我认为这个模块比较好。
