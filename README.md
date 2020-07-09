@@ -1,4 +1,4 @@
-README.md  English
+README.md in English
 # Matics
 Matics is a math module. As the author has not translated the notes into English for the time being, please forgive me. But it's a bit good.
 
