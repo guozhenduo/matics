@@ -18,7 +18,7 @@ class Fraction:
         return Fraction(num_one + num_two, den)
 
     def __mul__(self, other):
-        if isinstance(other, int) or isinstance(other, float):
+        if isinstance(other, int):
             return Fraction(other * self.num1, other * self.num2)
         num = self.num1 * other.num1
         den = self.num2 * other.num2
