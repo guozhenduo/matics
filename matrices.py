@@ -6,13 +6,16 @@ class Matrix:
     
         :param arr: The array representation of the matrix.
         """
-        if not (arr and all(isinstance(k, list) for k in arr)):
+        if not arr:
             raise IndexError
+        if not all(isinstance(k, list) for k in arr):
+            if all(isinstance(k, int) or isinstance(k, float) for k in arr):
+                arr = [arr]
+            else:
+                raise IndexError
         self.arr = arr
         self.length = len(arr)
-        self.adim = list(str(arr)).count("[")
-        self.n = len(arr[0])
-
+        self.adim = len(arr[0])
 
 
     def __add__(self, other):
@@ -23,13 +26,14 @@ class Matrix:
         :param other: The matrix on the right side of the operator.
         :return: Returns a matrix object of the sum.
         """
-        if self.m != other.m or self.n != other.n:
+        if self.length != other.length or self.adim != other.adim:
             raise IndexError
         sum_matrix = [
-        [self.arr[i][j] + other.arr[i][j] for j in range(self.n)]
-        for i in range(self.m)
+        [self.arr[i][j] + other.arr[i][j] for j in range(self.adim)]
+        for i in range(self.length)
         ]
         return Matrix(sum_matrix)
+
 
     def __mul__(self, other):
         """
@@ -40,14 +44,16 @@ class Matrix:
         :param other: The matrix on the right side of the operator.
         :return: Returns a matrix object of the product.
         """
-        if self.n != other.m:
+        if self.adim != other.length:
             raise IndexError
-        prod = [[0] * other.n for _ in range(self.m)]
-        for i in range(self.m):
-            for j in range(other.n):
-                for k in range(self.n):
+        prod = [[0] * other.adim for _ in range(self.length)]
+        for i in range(self.length):
+            for j in range(other.adim):
+                for k in range(self.adim):
                     prod[i][j] += self.arr[i][k] * other.arr[k][j]
         return Matrix(prod)
+
+
     def __repr__(self):
 
         """
@@ -58,6 +64,7 @@ class Matrix:
         """
 
         return f"Matrix({self.arr})"
+
 
     def __str__(self):
         """
