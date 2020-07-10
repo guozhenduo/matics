@@ -44,6 +44,8 @@ class Matrix:
         :param other: The matrix on the right side of the operator.
         :return: Returns a matrix object of the product.
         """
+        if isinstance(other, int) or isinstance(other, float):
+            return Matrix([[other * item for item in row] for row in self.arr])
         if self.adim != other.length:
             raise IndexError
         prod = [[0] * other.adim for _ in range(self.length)]
