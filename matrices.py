@@ -48,4 +48,14 @@ class Matrix:
                     prod[i][j] += self.arr[i][k] * other.arr[k][j]
         return Matrix(prod)
     def __repr__(self):
+        """
+        >>> import matrices as m
+        >>> l=m.Matrix([[1,2])
+        >>> l
+        Matrix([[1,2]])
+        """
         return f"Matrix({self.arr})"
+    def __str__(self):
+        arr = str(self.arr)
+        arr = arr.replace(",","")
+        return arr
