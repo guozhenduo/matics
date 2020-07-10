@@ -55,14 +55,12 @@ class Matrix:
 
 
     def __repr__(self):
-
         """
         >>> import matrices as m
         >>> l=m.Matrix([[1,2])
         >>> l
         Matrix([[1,2]])
         """
-
         return f"Matrix({self.arr})"
 
 
@@ -73,7 +71,4 @@ class Matrix:
         >>> print(l)
         [[1 2]]
         """
-        arr = str(self.arr)
-        arr = arr.replace(",","")
-
-        return arr
+        return str(self.arr).replace(',', '')
