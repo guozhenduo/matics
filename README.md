@@ -17,6 +17,7 @@ Matics is a math module. As the author has not translated the notes into English
 - 1.3.0
 - 1.3.1
 - 1.3.2rc1
+- 1.3.2rc2
 
 # Usage
 If you want to use past versions of this project, unzip the corresponding tar.xz file: `matics-+{desired_version}.tar.xz`
@@ -71,7 +72,7 @@ No plan now.
 
 2. Which version is good?
 
- - 1.3.1
+ - 1.3.2rc2
 
 
 README.md in Chinese
@@ -144,4 +145,4 @@ $ python main.py
 1. 我可以做贡献吗？
  - 肯定的。只要你的代码足够好。
 2. 那个版本好？
- - 1.3.1
+ - 1.3.2rc2
