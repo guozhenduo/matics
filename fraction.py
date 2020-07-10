@@ -14,7 +14,7 @@ class Fraction:
             return Fraction(self.num1 + other + self.num2, self.num2)
         num_one = self.num1 * other.num2
         num_two = other.num1 * self.num2
-        den = self.num2 + other.num2
+        den = self.num2 * other.num2
         return Fraction(num_one + num_two, den)
 
     def __mul__(self, other):
