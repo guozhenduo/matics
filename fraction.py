@@ -1,7 +1,9 @@
+from math import gcd 
 class Fraction:
     def __init__(self, number1, number2):
-        self.num1 = number1
-        self.num2 = number2
+        a1 = gcd(number1,number2)
+        self.num1 = int(number1/a1)
+        self.num2 = int(number2/a1)
     def __add__(self, other):
         if isinstance(other, int):
             return Fraction(self.num1 + other + self.num2, self.num2)
