@@ -10,7 +10,7 @@ class Matrix:
             raise IndexError
         self.arr = arr
         self.length = len(arr)
-        self.dim = list(str(arr)).count("[")
+        self.adim = list(str(arr)).count("[")
         self.n = len(arr[0])
 
 
