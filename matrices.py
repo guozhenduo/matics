@@ -15,7 +15,7 @@ class Matrix:
                 raise IndexError
         self.arr = arr
         self.length = len(arr)
-        self.adim = len(arr[0])
+        self.adim = list(str(arr)).count('[')
 
 
     def __add__(self, other):
