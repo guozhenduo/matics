@@ -68,4 +68,5 @@ class Matrix:
         """
         arr = str(self.arr)
         arr = arr.replace(",","")
+
         return arr
