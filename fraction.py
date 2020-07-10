@@ -1,9 +1,11 @@
 from math import gcd 
 class Fraction:
     def __init__(self, number1, number2):
-        a1 = gcd(number1,number2)
-        self.num1 = int(number1/a1)
-        self.num2 = int(number2/a1)
+        if not (ininstance(num1, int) and ininstance(num2, int)):
+            raise TypeError
+        div = gcd(num1, num2)
+        self.num1 = num1 // div
+        self.num2 = num2 // div
     def __add__(self, other):
         if isinstance(other, int):
             return Fraction(self.num1 + other + self.num2, self.num2)
