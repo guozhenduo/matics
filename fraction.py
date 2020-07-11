@@ -22,7 +22,7 @@ class Fraction:
 
     def __add__(self, other):
         if type(other) in [int, float]:
-            return Fraction(self.num1 + other + self.num2, self.num2)
+            return Fraction(self.num1 + other * self.num2, self.num2)
         num_one = self.num1 * other.num2
         num_two = other.num1 * self.num2
         den = self.num2 * other.num2
