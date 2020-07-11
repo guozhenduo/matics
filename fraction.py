@@ -30,7 +30,7 @@ class Fraction:
 
     def __mul__(self, other):
         if type(other) in [int, float]:
-            return Fraction(other * self.num1, other * self.num2)
+            return Fraction(other * self.num1, self.num2)
         num = self.num1 * other.num1
         den = self.num2 * other.num2
         return Fraction(num, den)
