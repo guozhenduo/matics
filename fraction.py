@@ -2,7 +2,7 @@ from math import gcd
 
 
 class Fraction:
-    def __init__(self, num1, num2):
+    def __init__(self, num1, num2=1):
         if not (isinstance(num1, int) and isinstance(num2, int)):
             raise TypeError
         div = gcd(num1, num2)
@@ -11,7 +11,7 @@ class Fraction:
 
     def __add__(self, other):
         if isinstance(other, int):
-            return Fraction(self.num1 + other + self.num2, self.num2)
+            return Fraction(self.num1 + other * self.num2, self.num2)
         num_one = self.num1 * other.num2
         num_two = other.num1 * self.num2
         den = self.num2 * other.num2
