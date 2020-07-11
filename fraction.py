@@ -2,12 +2,20 @@ from math import gcd
 
 
 class Fraction:
-    def __init__(self, num1, num2):
+    def __init__(self,dstr, num1=0, num2=0):
         if not (isinstance(num1, int) and isinstance(num2, int)):
             raise TypeError
-        div = gcd(num1, num2)
-        self.num1 = num1 // div
-        self.num2 = num2 // div
+        if num1 != 0 and num2 != 0:
+            div = gcd(num1, num2)
+            self.num1 = int(num1 // div)
+            self.num2 = int (num2 // div )
+
+        else:
+            num1 = int(dstr[0])
+            num2 = int(dstr[-1])
+            div = gcd(num1,num2)
+            self.num1 = int (num1 / div )
+            self.num2 = int  ( num2 / div )
 
     def __add__(self, other):
         if isinstance(other, int):
