@@ -1,24 +1,27 @@
-from math import gcd 
+from math import gcd
+import re
 
 
 class Fraction:
-    def __init__(self,dstr, num1=0, num2=0):
-        if not (isinstance(num1, int) and isinstance(num2, int)):
-            raise TypeError
-        if num1 != 0 and num2 != 0:
+    def __init__(self, num1=0, num2=1):
+        for k in [type(num1), type(num2)]:
+            if k not in [int, float, str]:
+                raise TypeError
+        if isinstance(num1, str):
+            if re.match('^[0-9]+/[0-9]+$', num1):
+                num1, num2 = [int(k) for k in num1.split('/')]
+            else:
+                raise TypeError
+        elif isinstance(num1, int) and isinstance(num2, int):
             div = gcd(num1, num2)
-            self.num1 = int(num1 // div)
-            self.num2 = int (num2 // div )
-
+            self.num1 = num1 // div
+            self.num2 = num2 // div
         else:
-            num1 = int(dstr[0])
-            num2 = int(dstr[-1])
-            div = gcd(num1,num2)
-            self.num1 = int (num1 / div )
-            self.num2 = int  ( num2 / div )
+            self.num1 = num1
+            self.num2 = num2
 
     def __add__(self, other):
-        if isinstance(other, int):
+        if type(other) in [int, float]:
             return Fraction(self.num1 + other + self.num2, self.num2)
         num_one = self.num1 * other.num2
         num_two = other.num1 * self.num2
@@ -26,12 +29,15 @@ class Fraction:
         return Fraction(num_one + num_two, den)
 
     def __mul__(self, other):
-        if isinstance(other, int):
+        if type(other) in [int, float]:
             return Fraction(other * self.num1, other * self.num2)
         num = self.num1 * other.num1
         den = self.num2 * other.num2
         return Fraction(num, den)
 
+    def __truediv__(self, other):
+        return self * Fraction(other.num2, other.num1)
+    
     def __repr__(self):
         return f'Fraction({self.num1}, {self.num2})'
 
