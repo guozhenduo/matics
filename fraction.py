@@ -22,6 +22,7 @@ class Fraction:
             self.num1 = num1 // div
             self.num2 = num2 // div
         else:
+            num2 = num2 if num1 else 1
             self.num1 = [float, int][num1 == int(num1)](num1)
             self.num2 = [float, int][num2 == int(num2)](num2)
 
