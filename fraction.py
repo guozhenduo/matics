@@ -25,6 +25,13 @@ class Fraction:
             self.num1 = [float, int][num1 == int(num1)](num1)
             self.num2 = [float, int][num2 == int(num2)](num2)
 
+    def __neg__(self):
+        sign = sum([self.num1 > 0, self.num2 > 0, 1]) % 2
+        return Fraction(-1 ** sign * abs(self.num1), abs(self.num2))
+
+    def __sub__(self, other):
+        return self + -other
+
     def __add__(self, other):
         if type(other) in [int, float]:
             return Fraction(self.num1 + other * self.num2, self.num2)
@@ -40,15 +47,14 @@ class Fraction:
         den = self.num2 * other.num2
         return Fraction(num, den)
 
-    def __neg__(self):
-        sign = sum([self.num1 > 0, self.num2 > 0, 1]) % 2
-        return Fraction(-1 ** sign * abs(self.num1), abs(self.num2))
-
-    def __sub__(self, other):
-        return self + -other
-
     def __truediv__(self, other):
         return self * Fraction(other.num2, other.num1)
+
+    def __int__(self):
+        return self.num1 // self.num2
+
+    def __float__(self):
+        return self.num1 / self.num2
 
     def __repr__(self):
         return f'Fraction({self.num1}, {self.num2})'
