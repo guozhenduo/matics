@@ -41,7 +41,7 @@ class Fraction:
         return Fraction(num, den)
 
     def __neg__(self):
-        sign = sum([self.num1 > 0, self.num2 > 0]) % 2
+        sign = sum([self.num1 > 0, self.num2 > 0, 1]) % 2
         return Fraction(-1 ** sign * abs(self.num1), abs(self.num2))
 
     def __sub__(self, other):
