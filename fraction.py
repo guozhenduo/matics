@@ -1,24 +1,37 @@
-from math import gcd
+import math
 import re
 
 
 class Fraction:
     def __init__(self, num1=0, num2=1):
-        for k in [type(num1), type(num2)]:
-            if k not in [int, float, str]:
+        if not ({type(num1), type(num2)} - {int, float, str}):
+            if type(num1) != str and type(num2) == str:
                 raise TypeError
         if isinstance(num1, str):
-            if re.match('^[0-9]+/[0-9]+$', num1):
-                num1, num2 = [int(k) for k in num1.split('/')]
+            regex = '-?[0-9]+(.[0-9]+)?'
+            if re.match(f'^{regex}/{regex}$', num1):
+                num1, num2 = num1.split('/')
+                num1 = [int, float]['.' in num1](num1)
+                num2 = [int, float]['.' in num2](num2)
             else:
                 raise TypeError
-        elif isinstance(num1, int) and isinstance(num2, int):
-            div = gcd(num1, num2)
+        if not num2:
+            raise ZeroDivisionError
+        if isinstance(num1, int) and isinstance(num2, int):
+            div = math.gcd(num1, num2)
             self.num1 = num1 // div
             self.num2 = num2 // div
         else:
-            self.num1 = num1
-            self.num2 = num2
+            num2 = num2 if num1 else 1
+            self.num1 = [float, int][num1 == int(num1)](num1)
+            self.num2 = [float, int][num2 == int(num2)](num2)
+
+    def __neg__(self):
+        sign = sum([self.num1 > 0, self.num2 > 0, 1]) % 2
+        return Fraction(-1 ** sign * abs(self.num1), abs(self.num2))
+
+    def __sub__(self, other):
+        return self + -other
 
     def __add__(self, other):
         if type(other) in [int, float]:
@@ -37,7 +50,13 @@ class Fraction:
 
     def __truediv__(self, other):
         return self * Fraction(other.num2, other.num1)
-    
+
+    def __int__(self):
+        return self.num1 // self.num2
+
+    def __float__(self):
+        return self.num1 / self.num2
+
     def __repr__(self):
         return f'Fraction({self.num1}, {self.num2})'
 
