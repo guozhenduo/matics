@@ -4,15 +4,18 @@ import re
 
 class Fraction:
     def __init__(self, num1=0, num2=1):
-        for k in [type(num1), type(num2)]:
-            if k not in [int, float, str]:
+        if not ({type(num1), type(num2)} - {int, float, str}):
+            if type(num1) != str and type(num2) == str:
                 raise TypeError
         if isinstance(num1, str):
-            if re.match('^[0-9]+/[0-9]+$', num1):
-                num1, num2 = [int(k) for k in num1.split('/')]
+            regex = '[0-9]+(.[0-9]+)?'
+            if re.match(f'^{regex}/{regex}$', num1):
+                num1, num2 = num1.split('/')
+                num1 = [int, float]['.' in num1](num1)
+                num2 = [int, float]['.' in num2](num2)
             else:
                 raise TypeError
-        elif isinstance(num1, int) and isinstance(num2, int):
+        if isinstance(num1, int) and isinstance(num2, int):
             div = gcd(num1, num2)
             self.num1 = num1 // div
             self.num2 = num2 // div
