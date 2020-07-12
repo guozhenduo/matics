@@ -8,7 +8,7 @@ class Fraction:
             if type(num1) != str and type(num2) == str:
                 raise TypeError
         if isinstance(num1, str):
-            regex = '[0-9]+(.[0-9]+)?'
+            regex = '-?[0-9]+(.[0-9]+)?'
             if re.match(f'^{regex}/{regex}$', num1):
                 num1, num2 = num1.split('/')
                 num1 = [int, float]['.' in num1](num1)
