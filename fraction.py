@@ -1,4 +1,4 @@
-from math import gcd
+import math
 import re
 
 
@@ -18,7 +18,7 @@ class Fraction:
         if not num2:
             raise ZeroDivisionError
         if isinstance(num1, int) and isinstance(num2, int):
-            div = gcd(num1, num2)
+            div = math.gcd(num1, num2)
             self.num1 = num1 // div
             self.num2 = num2 // div
         else:
