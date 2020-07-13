@@ -30,9 +30,7 @@ $ bash install.sh
 
 ## Step2:
 ```bash
-$ python class1.py
-$ python useful.py
-$ python main.py
+$ bash test.sh
 ```
 
 # Examples
@@ -105,9 +103,7 @@ $ bash install.sh
 
 ## 步骤2:
 ```bash
-$ python class1.py
-$ python useful.py
-$ python main.py
+$ bash test.py
 ```
  # 实例
 ```python
