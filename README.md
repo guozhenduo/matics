@@ -24,8 +24,8 @@ If you want to use past versions of this project, unzip the corresponding tar.xz
 
 ## Step1:
 ```bash
-$ python func1setup.py build_ext --inplace
-$ python factorsetup.py build_ext --inplace
+$ cd matics 
+$ bash install.sh
 ```
 
 ## Step2:
@@ -99,8 +99,8 @@ README.md in Chinese
 如果你想使用过去版本，请解压matics-加版本.tar.xz。
  ##步骤1：
 ```bash
-$ python func1setup.py build_ext --inplace
-$ python factorsetup.py build_ext --inplace
+$ cd matics
+$ bash install.sh
 ```
 
 ## 步骤2:
