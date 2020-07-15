@@ -117,6 +117,7 @@ class Judge:
         
             print("必须是整数")
             exit()
+    
 class Equation:
     """开发中的解方程类"""
     def solution(self, n, e):
@@ -137,6 +138,3 @@ class Equation:
             
                 print(i)
                 i += 1
-class Matrix:
-    def __init__(self):
-        pass
