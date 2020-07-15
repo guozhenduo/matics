@@ -83,3 +83,4 @@ class Fraction:
 
     def __sub__(self,other):
         return (self.num1 / self.num2) - (other.num1 / other.num2)
+    def __
