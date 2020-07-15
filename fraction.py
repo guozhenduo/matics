@@ -77,3 +77,6 @@ class Fraction:
 
     def __str__(self):
         return f'{self.num1}/{self.num2}'
+        
+    def __divmod__(self,other):
+        return (self.num1 / self.num2) / (other.num1 / other.num2 )   
