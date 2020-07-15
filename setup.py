@@ -6,6 +6,6 @@ setup(
 	keyword=['math','mathematics'],
 	author='suchenguo',
 	author_email='guozhenduo1@163.com',
-	description="一个小学数学知识的模块",
+	description="一个包含矩阵，分数，计算，判断数类型，常量的数学模块",
 	packages=find_packages()
 )
