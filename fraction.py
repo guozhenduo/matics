@@ -78,9 +78,20 @@ class Fraction:
     def __str__(self):
         return f'{self.num1}/{self.num2}'
         
-    def __divmod__(self,other):
+    def __div__(self,other):
         return (self.num1 / self.num2) / (other.num1 / other.num2 )   
 
     def __sub__(self,other):
         return (self.num1 / self.num2) - (other.num1 / other.num2)
-    def __
+
+    def __eq__(self,other):
+        return self.num1 == other.num1 and self.num2 == other.num2
+
+    def __ne__(self,other):
+        return self.num1 != other.num1 and self.num2 != other.num2
+
+    def __lt__(self,other):
+        return self.num1 < other.num1 and self.num2 < other.num2
+
+    def __gt__(self,other):
+        return self.num1 > other.num1 and self.num2 > other.num2
