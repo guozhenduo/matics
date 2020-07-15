@@ -40,6 +40,7 @@ class Fraction:
             num2 = num2 if num1 else 1
             self.num1 = [float, int][num1 == int(num1)](num1)
             self.num2 = [float, int][num2 == int(num2)](num2)
+        self.num = self.num1 / self.num2
 
     def __neg__(self):
         sign = sum([self.num1 > 0, self.num2 > 0, 1]) % 2
@@ -78,7 +79,7 @@ class Fraction:
         return f'{self.num1}/{self.num2}'
         
     def __div__(self,other):
-        return (self.num1 / self.num2) / (other.num1 / other.num2 )   
+        return (self.num1 / other.num1) * (other.num2 / self.num2 )   
 
     def __sub__(self,other):
         return (self.num1 / self.num2) - (other.num1 / other.num2)
