@@ -112,12 +112,11 @@ class Judge:
         
         self.number1 = number1
         self.number2 = number2
-        return math.gcd(self.number1, self.number2) == 1
-        if type(self.number1) != int or type(self.number2) != int:
-        
+        if type(self.number1) != int or type(self.num2) != int:
             print("必须是整数")
             exit()
-    
+        if math.gcd(self.number1, self.number2) == 1:
+            return True
 class Equation:
     """开发中的解方程类"""
     def solution(self, n, e):
