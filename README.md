@@ -1,6 +1,6 @@
 README.md in English
 # Matics
-Matics is a math module. As the author has not translated the notes into English for the time being, please forgive me. But it's a bit good.
+Matics is a math module.  But it's a bit good.
 
 ## Table of Contents
 - [Matics](#Matics)
