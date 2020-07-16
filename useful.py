@@ -9,7 +9,7 @@ try:
         if type(m) != int:
             print('类型必须为浮点数')
             exit()
-        if m <= 65000:
+        if m <= 65535:
             return so.step_add(m)
         else:
             return m * (m + 1) // 2
