@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <float.h>
 //It's have a CPlusPlus edition
 
 
