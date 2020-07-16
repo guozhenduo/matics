@@ -56,6 +56,7 @@ class Fraction:
         num_two = other.num1 * self.num2
         den = self.num2 * other.num2
         return Fraction(num_one + num_two, den)
+        
     def __mul__(self, other):
         if type(other) in [int, float]:
             return Fraction(other * self.num1, self.num2)
@@ -79,7 +80,7 @@ class Fraction:
         return f'{self.num1}/{self.num2}'
         
     def __div__(self,other):
-        return (self.num1 / other.num1) * (other.num2 / self.num2 )   
+        return (self.num1 / self.num2) / (other.num1 / other.num2 )   
 
     def __sub__(self,other):
         return (self.num1 / self.num2) - (other.num1 / other.num2)
@@ -102,5 +103,5 @@ class Fraction:
     def __ge__(self,other):
         return self.num1 >= other.num1 and self.num2 >= other.num2
 
-    def __round__(self,num):
-        return round(num1 / num2,num)
+    def __round__(self,number=3):
+        return round(self.num1 / self.num2,number)
