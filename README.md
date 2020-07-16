@@ -18,6 +18,7 @@ Matics is a math module.  But it's a bit good.
 - 1.3.1
 - 1.3.2rc1
 - 1.3.2rc2
+- 1.3.2
 
 # Usage
 If you want to use past versions of this project, unzip the corresponding tar.xz file: `matics-+{desired_version}.tar.xz`
@@ -92,6 +93,7 @@ README.md in Chinese
  - 1.3.0
  - 1.3.1
  - 1.3.2rc1
+ - 1.3.2
 
 #使用
 如果你想使用过去版本，请解压matics-加版本.tar.xz。
