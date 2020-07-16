@@ -12,7 +12,6 @@ long double step_add(long double max)  //max must be float
  	return j;  //return j
 }
 
-
 int main()
 {
 	return 0;
