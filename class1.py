@@ -85,10 +85,16 @@ class Calculate:
         self.number2 = number2
         result = math.gcd(self.number1, self.number2)
         return Calculation(result).factor()
+
     def step_add(self):
         return useful.step_add(self.number)
+
     def step_mul(self):
         return useful.step_mul(self.number)
+
+    def dpf(self):
+        return factor.dpf(self.number)
+    
             
 class Judge:
     
