@@ -1,24 +1,12 @@
-"""
-As the author has not translated the notes into English for the time being, please forgive me
-"""
-"""
-matics模块前250行在这
-版本:1.2.9
-"""
 
 import math
 import useful
 
 try:
     from func1 import *
-except:
-    print("pleas python func1setup.py build_ext --inplace")
-    exit()
-
-try:
     import factor 
 except:
-    print("pleas python factorsetup.py build_ext --inplace")
+    print("$ bash install.sh")
     exit()
 
 
