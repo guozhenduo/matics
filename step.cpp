@@ -1,8 +1,6 @@
 #include <iostream>
 //step.cpp(C++'s step.c)
 
-
-
 long double step_add(long double max)  //max must be float
 {	
  	long double j=0.0; //define j
@@ -13,7 +11,6 @@ long double step_add(long double max)  //max must be float
  	
  	return j;  //return j
 }
-
 
 
 int main()
