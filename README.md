@@ -7,7 +7,6 @@ Matics is a math module.  But it's a bit good.
 - [Lastest version](#Lastest-version)
 - [Usage](#Usage)
   - [Step1](##Step1)
-  - [Step2](##Step2)
 - [Examples](#Examples)
 - [Thanks-For-Who](#Thanks-For-Who)
 - [Plan](#Plan)
@@ -21,16 +20,12 @@ Matics is a math module.  But it's a bit good.
 - 1.3.2
 
 # Usage
-If you want to use past versions of this project, unzip the corresponding tar.xz file: `matics-+{desired_version}.tar.xz`
+See DOCS.md
 
 ## Step1:
 ```bash
-$ cd matics 
+$ cd matics
 $ bash install.sh
-```
-
-## Step2:
-```bash
 $ bash test.sh
 ```
 
@@ -87,7 +82,6 @@ README.md in Chinese
 - [版本](#版本)
 - [使用](#使用)
   - [步骤1](##步骤1)
-  - [步骤2](##步骤2)
 - [实例](#实例)
 - [鸣谢](#鸣谢)
 - [计划](#计划)
@@ -97,20 +91,17 @@ README.md in Chinese
  - 1.3.0
  - 1.3.1
  - 1.3.2rc1
- - 1.3.2
 
 #使用
-如果你想使用过去版本，请解压matics-加版本.tar.xz。
+见DOCS.md
+
  ##步骤1：
 ```bash
 $ cd matics
 $ bash install.sh
+$ bash test.sh
 ```
 
-## 步骤2:
-```bash
-$ bash test.py
-```
  # 实例
 ```python
 >>> import matics.main as m 
