@@ -89,9 +89,6 @@ class Calculate:
     def step_add(self):
         return useful.step_add(self.number)
 
-    def step_mul(self):
-        return useful.step_mul(self.number)
-
     def dpf(self):
         return factor.dpf(self.number)
     
