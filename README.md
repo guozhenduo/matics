@@ -73,6 +73,10 @@ No plan now.
 
  - 1.3.2rc2
 
+3. How do we update?
+
+ - We update it every two weeks.
+
 
 README.md in Chinese
 
@@ -143,6 +147,11 @@ $ bash test.py
 1. 我可以做贡献吗？
 
  - 肯定的。只要你的代码足够好。
+
 2. 那个版本好？
 
  - 1.3.2rc2
+
+3. 我们如何更新？
+
+ - 两周一次
