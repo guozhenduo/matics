@@ -17,15 +17,15 @@ class Constant:
     >>> j=Constant()
     >>> j.pi()
     3.14159265358979323846
-    >>> j=Constant(位数=5)
+    >>> j=Constant(num=5)
     >>> j.pi()
     3.14159
     >>> j.tau()
     
     """
      
-    def __init__(self, 位数=20):
-        self.位数 = 位数
+    def __init__(self, num=20):
+        self.num = num
         self.float_pi = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
         
     def pi(self):
@@ -104,7 +104,7 @@ class Judge:
         self.number1 = number1
         self.number2 = number2
         if type(self.number1) != int or type(self.num2) != int:
-            print("必须是整数")
+            print("type must be int ")
             exit()
         if math.gcd(self.number1, self.number2) == 1:
             return True
