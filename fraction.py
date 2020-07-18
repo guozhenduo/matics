@@ -78,30 +78,24 @@ class Fraction:
 
     def __str__(self):
         return f'{self.num1}/{self.num2}'
-        
-    def __div__(self,other):
-        return (self.num1 / self.num2) / (other.num1 / other.num2 )   
 
-    def __sub__(self,other):
-        return (self.num1 / self.num2) - (other.num1 / other.num2)
+    def __eq__(self, other):
+        return (self.num1 * other.num2) == (other.num1 * self.num2)
 
-    def __eq__(self,other):
-        return self.num1 == other.num1 and self.num2 == other.num2
+    def __ne__(self, other):
+        return not (self == other)
 
-    def __ne__(self,other):
-        return self.num1 != other.num1 and self.num2 != other.num2
+    def __lt__(self, other):
+        return (self.num1 * other.num2) < (other.num1 * self.num2)
 
-    def __lt__(self,other):
-        return self.num1 < other.num1 and self.num2 < other.num2
+    def __gt__(self, other):
+        return not (self <= other)
 
-    def __gt__(self,other):
-        return self.num1 > other.num1 and self.num2 > other.num2
+    def __le__(self, other):
+        return (self == other) or (self < other)
 
-    def __le__(self,other):
-        return self.num1 <= other.num1 and self.num2 <= other.num2
+    def __ge__(self, other):
+        return not (self < other)
 
-    def __ge__(self,other):
-        return self.num1 >= other.num1 and self.num2 >= other.num2
-
-    def __round__(self,number=3):
-        return round(self.num1 / self.num2,number)
+    def __round__(self, number=0):
+        return Fraction(round(self.num1/self.num2, number))
