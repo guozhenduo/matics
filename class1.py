@@ -93,7 +93,7 @@ class Calculate:
         return factor.dpf(self.number)
 
     def lcm(self,num):
-        return self.number * num / gcd(self.number,num)
+        return int(self.number * num / math.gcd(self.number,num))
             
 class Judge:
     
