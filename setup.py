@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
 	name='matics',
-	version="1.3.2",
+	version="1.3.3rc1",
 	keyword=['math','mathematics'],
 	author='suchenguo',
 	author_email='guozhenduo1@163.com',
