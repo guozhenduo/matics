@@ -1,3 +1,4 @@
+Please look at (README.md)[https://github.com/guozhenduo/matics/blob/master/README.md] before you look at this.
 # Class Calculate
 ```python
 >>> import matics.main as m
