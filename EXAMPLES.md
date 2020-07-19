@@ -13,4 +13,5 @@ Please look at [README.md](http://github.com/guozhenduo/matics/blob/master/READM
 >>> #primer_number(self)
 >>> u.primer_number()
 [2,3,5,7]
->>> 
+>>> i.primer_number()
+[2,3,5,7,11,13,17,19]
