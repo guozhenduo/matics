@@ -29,7 +29,7 @@ $ ./install.sh
 $ bash test.sh
 ```
 
-#Examples
+# Examples
 Pleas look at [`EXAMPLES.md`](https://github.com/guozhenduo/matics/blob/master/EXAMPLES.md)
 
 Author's email is [guozhenduo1@163.com](mailto:guozhenduo1@163.com). Welcome!!!
@@ -83,28 +83,9 @@ $ bash test.sh
 ```
 
  # 实例
-```python
->>> import matics.main as m 
->>> a1 = m.Constant(位数=5)
->>> print(a1.pi())
+请看到[`EXAMPLES.md`](https://github.com/guozhenduo/matics/blob/master/EXAMPLES.md)
 
-3.14159
 
->>> a2 = m.Constant(位数=6)
->>> print(a2)
-
-3.141592
-
->>> a3 = m.Calculate(10)
->>> print(a3.factor())
-
-[1, 2, 5, 10]
-
->>> a4 = m.Calculate(12)
->>> print(a4.factor())
-
-[1, 2, 3, 4, 6, 12]
-```
 作者的邮箱是guozhenduo1@163.com，欢迎来信
 
 # 鸣谢
