@@ -11,7 +11,6 @@ def primer(se):
 	r = primes[:]
 	for a in range(8, int(se) + 1):
 		if any(a % k == 0 for k in primes):
-			print(a)
 			continue
 		r.append(a)
 	return r

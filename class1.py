@@ -64,18 +64,14 @@ class Calculate:
         m = self.number
         
         return [i for i in primer(m)]
-        
-    def _composite_number(self):
-                    
-        return composite(self.number)
-        
+
     def composite_number(self):
         
         """找一定范围的合数"""
         
-        self.m = self.number
+        m = self.number
         
-        return [i for i in Calculation(self.m)._composite_number()]
+        return [i for i in composite(m)]
 
     def cofactor(self,number2):
 
