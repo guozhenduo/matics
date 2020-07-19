@@ -63,7 +63,7 @@ class Calculate:
         
         m = self.number
         
-        return [i for i in Calculate(m)._primer_number()]
+        return [i for i in primer(m)]
         
     def _composite_number(self):
                     
