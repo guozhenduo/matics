@@ -1,6 +1,6 @@
-Class Calculate 
-| Func-Name |  Func-examples |
-| -------------------- | ------------------- |
-| __init__(self,number) | ```python 
-import matics.main as m  m.Calculate(5) ``` |
- 
+# Class Calculate
+```python
+>>> import matics.main as m
+>>> #__init__(self,number)
+>>> u = m.Calculate(10)
+>>> i = m.Calculate(number=20)
