@@ -2,9 +2,10 @@
 //It's have a CPlusPlus edition
 
 
-long long step_add(long long max)  //max must be float
+long long step_add(long long max)  //max <= 65536   
 {	
-	return max * (max+1) / 2 ;
+	long long result = max * (max+1) / 2 ;
+	return  result;
 }
 
 

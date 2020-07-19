@@ -1,7 +1,7 @@
 #include <iostream>
 //step.cpp(C++'s step.c)
 
-long double step_add(long double max)  //max must be float
+long long step_add(long long max)  //max <= 65535
 {	
  	return max * (max+1) / 2;
 }
