@@ -9,10 +9,8 @@ try:
         if type(m) != int:
             print('类型必须为整数')
             exit()
-        if m <= 65535:
-            return so.step_add(m)
-        else:
-            return m + (m+1) // 2
+        result = m + (m + 1) // 2 if m > 65535 else so.step_add(m)
+        return result
 
 except:
     print("Please inspect")
