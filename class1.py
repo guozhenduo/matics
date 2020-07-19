@@ -53,10 +53,6 @@ class Calculate:
         
         return factor.factor(self.number)
         
-    def _primer_number(self):
-    
-        return primer(self.number)
-        
     def primer_number(self):
         
         """找一定范围的素数"""
