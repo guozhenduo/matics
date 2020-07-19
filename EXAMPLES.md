@@ -1,3 +1,3 @@
 Class Calculate 
-| FunctName |  Funcexamples |
+| Func-Name |  Func-examples |
 | -------------- | -------------- |
