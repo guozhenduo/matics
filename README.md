@@ -66,7 +66,7 @@ README.md in Chinese
 - [常见问题回答](#常见问题回答)
 
 #版本
- - 1.3.2
+请见[*matics-dist*](http://github.com/guozhenduo/matics-dist)
 
 
 
