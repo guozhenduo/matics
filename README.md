@@ -13,11 +13,11 @@ Matics is a math module.  But it's a bit good.
 - [FAQ](#FAQ)
 
 ## Latest Version
-- 1.3.0
-- 1.3.1
-- 1.3.2rc1
-- 1.3.2rc2
 - 1.3.2
+
+
+
+
 
 # Usage
 See DOCS.md
