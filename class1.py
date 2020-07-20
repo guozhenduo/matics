@@ -1,14 +1,12 @@
 
 import math
-import useful
-
 try:
     from func1 import *
     import factor 
 except:
     print("$ bash install.sh")
     exit()
-
+import useful
 
 class Constant:
     
