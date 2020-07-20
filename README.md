@@ -65,15 +65,15 @@ README.md in Chinese
 - [计划](#计划)
 - [常见问题回答](#常见问题回答)
 
-#版本
+# 版本
 请见[*matics-dist*](http://github.com/guozhenduo/matics-dist)
 
 
 
-#使用
+# 使用
 见DOCS.md
 
- ##步骤1：
+ ## 步骤1：
 ```bash
 $ cd matics
 $ bash install.sh
