@@ -4,7 +4,7 @@ try:
     from func1 import *
     import factor 
 except:
-    print("$ bash install.sh")
+    print("$ ./install.sh")
     exit()
 import useful
 
@@ -43,8 +43,48 @@ class Calculate:
     """方便计算,所以开发"""
     
     def __init__(self,number):
-        self.number = number
+        if isinstance(number,str):
+            raise TypeError("Type must be int or float!")
+
+        elif isinstance(number,float):
+            self.number = int(number)
         
+        self.number = number
+
+    def __repr__(self):
+        return f"Calculate({self.number})"
+
+    def __str__(self):
+        return f"{self.number}"
+
+    def __eq__(self,other):
+        return self.number == other.number 
+
+    def __ne__(self,other):
+        return self.number != other.number 
+
+    def __lt__(self,other):
+        return self.number < other.number 
+
+    def __gt__(self,other):
+        return self.number > other.number 
+
+    def __add__(self,other):
+        return self.number + other.number 
+
+    def __sub__(self,other):
+        return self.number - other.number 
+
+    def __mul__(self,other):
+        return self.number * other.number 
+
+    def __div__(self,other):
+        return self.number / other.number 
+
+    def __mod__(self,other):
+        return self.number % other.number 
+
+    
     def factor(self):
         
         """用列表推导式找因数"""
@@ -88,18 +128,29 @@ class Calculate:
 class Judge:
     
     """判断数的类型"""
-    
-    def isintert(self, number1, number2):
+
+    def __init__(self,number1,number2):
+        if isinstance(number1,str) or isinstance(number2,str):
+            raise TypeError("Type must be int or float!")
+
+        elif isinstance(number1,float) or isinstance(number2,float):
+            number1 = int(number1)
+            number2 = int(number2)
+
+        self.number1 = number1 
+        self.number2 = number2
+        
+    def isintert(self):
         
         """判断是否一个数为质数"""
         
-        self.number1 = number1
-        self.number2 = number2
-        if type(self.number1) != int or type(self.num2) != int:
-            print("type must be int ")
-            exit()
+
         if math.gcd(self.number1, self.number2) == 1:
             return True
+
+        else:
+            return False
+            
 class Equation:
     """开发中的解方程类"""
     def solution(self, n, e):
