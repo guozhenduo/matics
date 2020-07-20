@@ -156,21 +156,17 @@ class Judge:
             
 class Equation:
     """开发中的解方程类"""
-    def solution(self, n, e):
-    
-        i = 0
-        self.n = n
-        self.e = float(e)
-        while i < self.e:
+
+    def __init__(self,x):
+        self.x = x
         
-            l = self.n.replace('x', str(i))
-            if eval(l) == self.e:
-            
+    def solution(self, string, number):
+        self.string = string
+        self.number = number
+
+        for i in range(self.number+1):
+            string =  self.string.replace(self.x,str(i))
+            if int(eval(string)) == self.number:
                 return i
-            elif i == self.e:
-            
-                break
-            else:
-            
-                print(i)
-                i += 1
+
+            string.replace(str(i),self.x)
