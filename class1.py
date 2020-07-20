@@ -47,10 +47,13 @@ class Calculate:
             raise TypeError("Type must be int or float!")
 
         elif isinstance(number,float):
-            self.number = int(number)
+            number = int(number)
         
         self.number = number
 
+    def __int__(self):
+        return int(self.number)
+    
     def __repr__(self):
         return f"Calculate({self.number})"
 
@@ -111,10 +114,10 @@ class Calculate:
 
         """找两个数所有的公因数"""
 
-        self.number1 = self.number
-        self.number2 = number2
-        result = math.gcd(self.number1, self.number2)
-        return Calculation(result).factor()
+        if isinstance(number2,Calculate):
+            number2 = number2.number
+        result = math.gcd(int(self.number),int(number2))
+        return Calculate(result).factor()
 
     def step_add(self):
         return useful.step_add(self.number)
