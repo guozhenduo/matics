@@ -13,9 +13,7 @@ Matics is a math module.  But it's a bit good.
 - [FAQ](#FAQ)
 
 ## Latest Version
-- 1.3.2
-
-
+Please look at [*matics-dist*](http://github.com/guozhenduo/matics-dist)
 
 
 
