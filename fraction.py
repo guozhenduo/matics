@@ -99,3 +99,6 @@ class Fraction:
 
     def __round__(self, number=0):
         return Fraction(round(self.num1 / self.num2, number))
+
+    def __mod__(self,other):
+        return (self.num1 / self.num2) % (other.num1 / other.num2 )
