@@ -4,8 +4,9 @@ from class1 import Calculate
 
 class Fraction:
 
-    def __init__(self, num1=0, num2=1):
+    def __init__(self, num1=0, num2=1,reduction_fraction = True):
 
+        self.reduction_fraction = reduction_fraction
         if not ({type(num1), type(num2)} - {int, float, str}):
 
             if type(num1) != str and type(num2) == str:
@@ -31,7 +32,12 @@ class Fraction:
 
         if isinstance(num1, int) and isinstance(num2, int):
 
-            div = math.gcd(num1, num2)
+            if self.reduction_fraction == False:
+                div = 1
+
+            else:
+                div = math.gcd(num1, num2)
+                
             self.num1 = num1 // div
             self.num2 = num2 // div
 
