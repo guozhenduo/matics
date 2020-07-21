@@ -104,5 +104,9 @@ class Fraction:
         return (self.num1 / self.num2) % (other.num1 / other.num2 )
 
     def reduction(self,other):
-        pass
+        # reduction of fractions to a common denominator
+        lcm = Calculate(self.num2).least_cm(other.num2)
+        self.num1,other.num1 = lcm // self.num2,lcm // other.num2 
+        self.num2,other.num2 = lcm,lcm
+        return [self,other]
         
