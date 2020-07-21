@@ -31,13 +31,13 @@ class Constant:
         
         """返回pi的一定位数,精度可选"""
         
-        return round(self.float_pi, self.number)
+        return round(self.float_pi, self.num)
         
     def tau(self):
         
         """返回tau的一定位数,精度可选"""
         
-        return round(self.float_pi * 2, self.number)
+        return round(self.float_pi * 2, self.num)
         
 class Calculate:    
 
