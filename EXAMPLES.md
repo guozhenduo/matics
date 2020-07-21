@@ -20,5 +20,5 @@ Please look at [README.md](http://github.com/guozhenduo/matics/blob/master/READM
 55
 >>> i.step_add()
 210
->>> 
+>>> u.
 ```
