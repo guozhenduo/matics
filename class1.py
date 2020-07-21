@@ -1,10 +1,13 @@
 
 import math
 try:
-    import func
+    import func1
 except:
     print("$ ./install.sh")
     exit()
+
+import ctypes as c 
+so = c.CDLL("./step.so")
 
 class Constant:
     
@@ -118,7 +121,11 @@ class Calculate:
         return func1.factor(result)
 
     def step_add(self):
-        return func1.stepadd(self.number)
+        if type(m) != int:                                                     
+            print('类型必须为整数')                                            
+            exit()                                                             
+        result = m + (m + 1) // 2 if m > 65535 else so.step_add(m)             
+        return result
 
     def pf(self):
         # Prime factorization

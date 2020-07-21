@@ -14,23 +14,7 @@ def primer(se):
 			continue
 		r.append(a)
 	return r
-try:
-    from functools import reduce
-    from ctypes import CDLL
-    so = CDLL("./step.so")
-    #程序员:苏晨果
-    #1.1.2版
-    #来源:未知
-    def stepadd(m):
-        if type(m) != int:
-            print('类型必须为整数')
-            exit()
-        result = m + (m + 1) // 2 if m > 65535 else so.step_add(m)
-        return result
 
-except:
-    print("Please look at README.md!")
-    exit()
 
 def factor(m):
 
