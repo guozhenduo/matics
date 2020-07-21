@@ -133,6 +133,7 @@ class Judge:
     """判断数的类型"""
 
     def __init__(self,number1,number2):
+
         if isinstance(number1,str) or isinstance(number2,str):
             raise TypeError("Type must be int or float!")
 
@@ -143,7 +144,7 @@ class Judge:
         self.number1 = number1 
         self.number2 = number2
         
-    def isintert(self):
+    def isprimer(self):
         
         """判断是否一个数为质数"""
         
