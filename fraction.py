@@ -1,6 +1,6 @@
 import math
 import re
-
+from class1 import Calculate
 
 class Fraction:
 
@@ -102,3 +102,7 @@ class Fraction:
 
     def __mod__(self,other):
         return (self.num1 / self.num2) % (other.num1 / other.num2 )
+
+    def reduction(self,other):
+        pass
+        

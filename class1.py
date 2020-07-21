@@ -89,7 +89,8 @@ class Calculate:
         return self.number % other.number 
 
     def __iadd__(self,other):
-        return self.number += other.number
+        self.number += other.number 
+        return self.number
     
     def factor(self):
         
@@ -135,7 +136,7 @@ class Calculate:
 
     def least_cm(self,num):
         # least common multiple
-        return int(self.number * num / math.gcd(self.number,num))
+        return (self.number * num)  // math.gcd(self.number,num)
             
 class Judge:
     
