@@ -24,7 +24,7 @@ See DOCS.md
 ```bash
 $ cd matics
 $ ./install.sh
-$ bash test.sh
+$ ./test.sh
 ```
 
 # Examples
@@ -76,8 +76,8 @@ README.md in Chinese
  ## 步骤1：
 ```bash
 $ cd matics
-$ bash install.sh
-$ bash test.sh
+$ ./install.sh
+$ ./test.sh
 ```
 
  # 实例
