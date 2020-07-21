@@ -121,17 +121,17 @@ class Calculate:
         return func1.factor(result)
 
     def step_add(self):
-        if type(m) != int:                                                     
-            print('类型必须为整数')                                            
+        if isinstance(self.number,int):                                                     
+            print('Type must be int ')                                            
             exit()                                                             
-        result = m + (m + 1) // 2 if m > 65535 else so.step_add(m)             
+        result = self.number + (self.number + 1) // 2 if self.number > 65535 else so.step_add(self.number)             
         return result
 
-    def pf(self):
+    def primef(self):
         # Prime factorization
         return func1.pf(self.number)
 
-    def lcm(self,num):
+    def least_cm(self,num):
         # least common multiple
         return int(self.number * num / math.gcd(self.number,num))
             

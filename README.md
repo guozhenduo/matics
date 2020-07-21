@@ -44,7 +44,7 @@ No plan now.
 
 2. Which version is good?
 
- - 1.3.2rc2
+ - 1.3.2
 
 3. How do we update?
 
@@ -100,7 +100,7 @@ $ bash test.sh
 
 2. 那个版本好？
 
- - 1.3.2rc2
+ - 1.3.2
 
 3. 我们如何更新？
 
