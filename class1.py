@@ -1,12 +1,10 @@
 
 import math
 try:
-    from func1 import *
-    import factor 
+    import func
 except:
     print("$ ./install.sh")
     exit()
-import useful
 
 class Constant:
     
@@ -108,24 +106,26 @@ class Calculate:
         
         m = self.number
         
-        return [i for i in composite(m)]
+        return [i for i in func1.composite(m)]
 
-    def cofactor(self,number2):
+    def acfactor(self,number2):
 
-        """找两个数所有的公因数"""
+        # all common factor 
 
         if isinstance(number2,Calculate):
             number2 = number2.number
         result = math.gcd(int(self.number),int(number2))
-        return Calculate(result).factor()
+        return func1.factor(result)
 
     def step_add(self):
-        return useful.step_add(self.number)
+        return func1.stepadd(self.number)
 
-    def dpf(self):
-        return factor.dpf(self.number)
+    def pf(self):
+        # Prime factorization
+        return func1.pf(self.number)
 
     def lcm(self,num):
+        # least common multiple
         return int(self.number * num / math.gcd(self.number,num))
             
 class Judge:
