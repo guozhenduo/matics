@@ -84,10 +84,12 @@ class Calculate:
 
     def __div__(self,other):
         return self.number / other.number 
-
+    
     def __mod__(self,other):
         return self.number % other.number 
 
+    def __iadd__(self,other):
+        return self.number += other.number
     
     def factor(self):
         
