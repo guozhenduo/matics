@@ -13,8 +13,7 @@ Matics is a math module.  But it's a bit good.
 - [FAQ](#FAQ)
 
 ## Latest Version
-Please look at [*matics-dist*](http://github.com/guozhenduo/matics-dist)
-
+- 1.3.2b1
 
 
 # Usage
@@ -44,7 +43,7 @@ No plan now.
 
 2. Which version is good?
 
- - 1.3.2
+ - 1.3.2b1
 
 3. How do we update?
 
@@ -66,8 +65,7 @@ README.md in Chinese
 - [常见问题回答](#常见问题回答)
 
 # 版本
-请见[*matics-dist*](http://github.com/guozhenduo/matics-dist)
-
+- 1.3.2b1
 
 
 # 使用
@@ -100,7 +98,7 @@ $ ./test.sh
 
 2. 那个版本好？
 
- - 1.3.2
+ - 1.3.2b1
 
 3. 我们如何更新？
 
