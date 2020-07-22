@@ -110,3 +110,6 @@ class Fraction:
         self.num2, other.num2 = lcm, lcm
         return [self, other]
         
+    def isimproper(self):
+        result_bool = True if self.num1 > self.num2 else False 
+        return result_bool
