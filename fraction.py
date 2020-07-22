@@ -4,9 +4,8 @@ from class1 import Calculate
 
 class Fraction:
 
-    def __init__(self, num1=0, num2=1,reduction_fraction = True):
+    def __init__(self, num1=0, num2=1, reduce=True):
 
-        self.reduction_fraction = reduction_fraction
         if not ({type(num1), type(num2)} - {int, float, str}):
 
             if type(num1) != str and type(num2) == str:
@@ -32,12 +31,7 @@ class Fraction:
 
         if isinstance(num1, int) and isinstance(num2, int):
 
-            if self.reduction_fraction == False:
-                div = 1
-
-            else:
-                div = math.gcd(num1, num2)
-                
+            div = math.gcd(num1, num2) ** reduce
             self.num1 = num1 // div
             self.num2 = num2 // div
 
@@ -106,13 +100,13 @@ class Fraction:
     def __round__(self, number=0):
         return Fraction(round(self.num1 / self.num2, number))
 
-    def __mod__(self,other):
+    def __mod__(self, other):
         return (self.num1 / self.num2) % (other.num1 / other.num2 )
 
-    def reduction(self,other):
+    def reduction(self, other):
         # reduction of fractions to a common denominator
         lcm = Calculate(self.num2).least_cm(other.num2)
-        self.num1,other.num1 = lcm // self.num2,lcm // other.num2 
-        self.num2,other.num2 = lcm,lcm
-        return [self,other]
+        self.num1, other.num1 = lcm // self.num2, lcm // other.num2 
+        self.num2, other.num2 = lcm, lcm
+        return [self, other]
         
