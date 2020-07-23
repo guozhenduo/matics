@@ -20,5 +20,8 @@ Please look at [README.md](http://github.com/guozhenduo/matics/blob/master/READM
 55
 >>> i.step_add()
 210
->>> u.
+>>> u.cofactor(i)
+[1,2,5,10]
+>>> i.cofactor(30)
+[1,2,5,10]
 ```
