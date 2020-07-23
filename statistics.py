@@ -86,6 +86,8 @@ class Fraction:
         return not (self == other)
 
     def __lt__(self, other):
+        if type(other) in [int, float]:
+            other = Fraction(other)
         return (self.num1 * other.num2) < (other.num1 * self.num2)
 
     def __gt__(self, other):
@@ -129,9 +131,9 @@ class Percentage:
         if isinstance(num, str):
             if "%" in num:
                 try:    
-                    num = int(num.replace("%"))
+                    num = int(num.replace("%", ""))
                 except:
-                    num = float(num.replace("%"))
+                    num = float(num.replace("%", ""))
 
         if isinstance(num, Fraction):
             self.num = num.num1 
