@@ -136,7 +136,10 @@ class Percentage:
                     num = float(num.replace("%", ""))
 
         if isinstance(num, Fraction):
-            self.num = num.num1 
+            one = 100 / num.num2
+            num.num1 *= one
+            num.num2 = 100
+            num = num.num1 
 
 
         try:
