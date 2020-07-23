@@ -155,16 +155,11 @@ class Judge:
         self.number2 = number2
         
     def isprimer(self):
-        
+
         """判断是否一个数为质数"""
-        
 
-        if math.gcd(self.number1, self.number2) == 1:
-            return True
+        return math.gcd(self.number1, self.number2) == 1
 
-        else:
-            return False
-            
 class Equation:
     """开发中的解方程类"""
 
