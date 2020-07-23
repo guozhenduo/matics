@@ -65,14 +65,14 @@ class Matrix:
 
         return str(self.arr).replace(',', '')
 
+    def __neg__(self):
+        neg_matrix = [
+            [-self.arr[i][j] for j in range(self.adim)]
+            for i in range(self.length)
+        ]
+
+        return Matrix(neg_matrix)
+
     def __sub__(self,other):
-        if self.length != other.length or self.adim != other.adim:
-                                                                           
-            raise IndexError                                      
-                                                                                                                                                           
-        result_matrix = [                                            
-        [self.arr[i][j] - other.arr[i][j] for j in range(self.adim)]
-        for i in range(self.length)     
-        ]                                                                                                                                                                                                                   
-                                                                                                                                                                                                                            
-        return Matrix(result_matrix)         
+
+        return self + -other
