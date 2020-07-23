@@ -1,3 +1,3 @@
 from class1 import *
 from matrices import *
-from fraction import *
+from statistics import *
