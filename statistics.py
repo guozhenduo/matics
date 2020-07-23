@@ -122,52 +122,56 @@ class Fraction:
 
 class Percentage:
 
-    def __init__(self,num1):
-        if num1 < 0:
+    def __init__(self, num):
+        if num < 0:
             raise TypeError
 
         try:
-            num1 = int(num1)
-
+            if num == int(num):
+                num = int(num)
+            else:
+                num = float(num)
         except:
-            raise TypeError("Error num1!")
+            raise TypeError("Error num!")
         
-        self.num1 = num1
-        self.fraction = Fraction(num1,100,reduce = False)
-        self.float_fraction = num1 // 100
+        self.num = num
+        self.fraction = Fraction(num, 100, False)
+        self.float_fraction = num / 100
 
-    def __add__(self,other):
-        return Percentage(self.num1 + other.num1)
+    def __add__(self, other):
+        return Percentage(self.num + other.num)
 
     def __repr__(self):
-        return f"Percentage({self.num1})"
+        return f"Percentage({self.num})"
 
     def __str__(self):
-        return f"{self.num1}%"    
+        return f"{self.num}%"
     
-    def __sub__(self,other):
-        return Percentage(self.num1 - other.num1)
+    def __sub__(self, other):
+        return Percentage(self.num - other.num)
 
-    def __div__(self,other):
-        return Percentage(self.num1 / other.num1)
+    def __div__(self, other):
+        if not other.num:
+            raise ZeroDivisionError
+        return Percentage(self.num / other.num)
 
-    def __mul__(self,other):
-        return Percentage(self.num1 * other.num1)
+    def __mul__(self, other):
+        return Percentage(self.num * other.num)
 
-    def __mod__(self,other):
-        return Percentage(self.num1 % other.num1)
+    def __mod__(self, other):
+        return Percentage(self.num % other.num)
 
-    def __eq__(self,other):
-        return self.num1 == other.num1
+    def __eq__(self, other):
+        return self.num == other.num
 
-    def __ne__(self,other):
-        return self.num1 != other.num1
+    def __ne__(self, other):
+        return self.num != other.num
 
-    def __lt__(self,other):
-        return self.num1 < other.num1
+    def __lt__(self, other):
+        return self.num < other.num
 
-    def __gt__(self,other):
-        return self.num1 > other.num1
+    def __gt__(self, other):
+        return self.num > other.num
 
     def to_fraction(self):
         return self.fraction
