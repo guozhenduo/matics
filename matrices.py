@@ -27,8 +27,8 @@ class Matrix:
             raise IndexError
 
         sum_matrix = [
-        [self.arr[i][j] + other.arr[i][j] for j in range(self.adim)]
-        for i in range(self.length)
+            [self.arr[i][j] + other.arr[i][j] for j in range(self.adim)]
+            for i in range(self.length)
         ]
 
         return Matrix(sum_matrix)
