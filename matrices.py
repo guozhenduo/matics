@@ -73,6 +73,12 @@ class Matrix:
         result_matrix = [                                            
         [self.arr[i][j] - other.arr[i][j] for j in range(self.adim)]
         for i in range(self.length)                               
+<<<<<<< HEAD
         ]                                                                                                                                                                                                                   
                                                                                                                                                                                                                                             
         return result_matrix                                                                                                                                                                                                  
+=======
+        ]                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                  
+        return result_matrix                                                                                                                                                               
+>>>>>>> 87749435d87e75b3910da7a67c6da32d6f9b3b78
