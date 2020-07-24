@@ -121,7 +121,9 @@ class Fraction:
         percentage = Percentage(two)
         return percentage
 
-
+    def to_float(self):
+        return self.num
+        
 class Percentage:
 
     def __init__(self, num):
@@ -136,10 +138,7 @@ class Percentage:
                     num = float(num.replace("%", ""))
 
         if isinstance(num, Fraction):
-            one = 100 / num.num2
-            num.num1 *= one
-            num.num2 = 100
-            num = num.num1 
+            num = num.num * 100
 
 
         try:
@@ -151,7 +150,7 @@ class Percentage:
             raise TypeError("Error num!")
         
         self.num = num
-        self.float_fraction = num / 100
+        self.float_percentage = num / 100
 
     def __add__(self, other):
         return Percentage(self.num + other.num)
@@ -191,3 +190,6 @@ class Percentage:
     def to_fraction(self):
         return Fraction(num, 100, False)
 
+    def to_float(self):
+        return self.float_percentage
+    
