@@ -13,6 +13,11 @@ Here's the documentation for the rest of the repository.
 ## Fraction Class
 | Method | Description |  Parameters |
 |--------|-------------|------------|
-| `__init__` | Create a New Fraction object. | `param:int: `num1 and num2 can't be zero.Num1 can be defined like this: '1/3' . `:return :` return a Fraction Object. |
+| `__init__` | Create a New Fraction object. | `param:int: `num1 and num2 can't be zero.Num1 can be defined like this: '1/3' .  |
 | `__add__` | Add Fraction Object | `param:other:`  Other is a Fraction Object too. `:return:` return a New Fraction Object |
 | `__mul__` | multiply Fraction Object | `param:other` Other is a Fraction Object too. `:return:` return a new Fraction Object |
+
+## Calculate Class
+| Method | Description | Parameters |
+|----------|----------|----------|
+| `__init__` | Initializes a Calculate class | `param:number `The parameter like:`"5"`or`5`or`5.0`. |
