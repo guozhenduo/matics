@@ -21,5 +21,6 @@ Here's the documentation for the rest of the repository.
 | Method | Description | Parameters |
 |----------|----------|----------|
 | `__init__` | Initializes a Calculate class | `param:number `The parameter like:`"5"` or `5` or `5.0`. |
-| `__int__` | Return int(self.number) | Noting |
-| `__repr__` | Format this string `Calculate({self.number})` | `:return:` Returns the object's `repr()` representation |
+| `__int__` | Return int(self.number) | `:return:` Returns int(self.number) |
+| `__repr__` | Format the string `Calculate({self.number})` | `:return:` Returns the object's `repr()` representation |
+| `__str__` | Format the `{self.number}` | `:return:`Return str(self.number) |
