@@ -116,9 +116,8 @@ class Fraction:
         return self > Fraction(1)   
 
     def to_percentage(self):
-        one = 100 / self.num2
-        two = self.num1 * one
-        percentage = Percentage(two)
+        result = self.num * 100
+        percentage = Percentage(result)
         return percentage
 
     def to_float(self):
