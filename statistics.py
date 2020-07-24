@@ -123,7 +123,11 @@ class Fraction:
 
     def to_float(self):
         return self.num
-        
+
+    def count_backwards(self):
+        # return  count backwards
+        return Fraction(self.num2,self.num1)
+    
 class Percentage:
 
     def __init__(self, num):
