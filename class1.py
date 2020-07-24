@@ -102,17 +102,13 @@ class Calculate:
         
         """找一定范围的素数"""
         
-        m = self.number
-        
-        return [i for i in primer(m)]
+        return [i for i in primer(self.number)]
 
     def composite_number(self):
         
         """找一定范围的合数"""
         
-        m = self.number
-        
-        return [i for i in func1.composite(m)]
+        return [i for i in func1.composite(self.number)]
 
     def acfactor(self,number2):
 

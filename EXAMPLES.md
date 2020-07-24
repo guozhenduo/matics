@@ -20,8 +20,10 @@ Please look at [README.md](http://github.com/guozhenduo/matics/blob/master/READM
 55
 >>> i.step_add()
 210
->>> u.cofactor(i)
+>>> # acfactor(self,number)
+>>> u.acfactor(i)
 [1,2,5,10]
->>> i.cofactor(30)
+>>> i.acfactor(30)
 [1,2,5,10]
+>>> 
 ```
