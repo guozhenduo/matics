@@ -29,6 +29,7 @@ Calculate(20)
 >>> i.step_add()
 210
 >>> # acfactor(self,number)
+>>> # all common factor
 >>> u.acfactor(i)
 [1,2,5,10]
 >>> i.acfactor(30)
@@ -38,5 +39,11 @@ Calculate(20)
 [4,6,8,9,10]
 >>> i.composite_number()
 [4,6,8,9,10,12,14,15,16,18,20]
->>> u.
+>>> #primef(self)
+>>> #prime_factor
+>>> u.primef()
+[2,5]
+>>> i.primef()
+[2,5]
+>>> 
 ```
