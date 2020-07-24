@@ -24,3 +24,4 @@ Here's the documentation for the rest of the repository.
 | `__int__` | Return int(self.number) | `:return:` Returns int(self.number) |
 | `__repr__` | Format the string `Calculate({self.number})` | `:return:` Returns the object's `repr()` representation |
 | `__str__` | Format the `{self.number}` | `:return:`Return str(self.number) |
+| `__eq__` | Determine whether the two `Calculate object` are equal or not | `param:other`other is Calculate object too.`:return:` return True or return False |
