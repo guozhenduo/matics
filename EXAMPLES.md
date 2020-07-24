@@ -12,6 +12,8 @@ Calculate(10)
 Calculate(20)
 >>> print(u)
 10
+>>> print(i)
+20
 >>> #factor(self)
 >>> u.factor()
 [1,2,5,10]
@@ -33,5 +35,8 @@ Calculate(20)
 [1,2,5,10]
 >>> #composite_number(self)
 >>> u.composite_number()
-
+[4,6,8,9,10]
+>>> i.composite_number()
+[4,6,8,9,10,12,14,15,16,18,20]
+>>> 
 ```
