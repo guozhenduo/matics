@@ -20,4 +20,5 @@ Here's the documentation for the rest of the repository.
 ## Calculate Class
 | Method | Description | Parameters |
 |----------|----------|----------|
-| `__init__` | Initializes a Calculate class | `param:number `The parameter like:`"5"`or`5`or`5.0`. |
+| `__init__` | Initializes a Calculate class | `param:number `The parameter like:`"5"` or `5` or `5.0`. |
+| `__int__` | Return int(self.number) | Noting |
