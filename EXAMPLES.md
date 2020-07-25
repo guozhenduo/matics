@@ -54,7 +54,7 @@ Calculate(20)
 ```
 # Class Constant
 - in class1.py 
-```
+```python
 >>> j=Constant()
 >>> # pi(self)
 >>> j.pi()
