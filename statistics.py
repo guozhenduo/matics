@@ -129,7 +129,7 @@ class Fraction:
         return self.num
 
     def reciprocal(self):
-        # return  count backwards
+        # return  reciprocal
         return self.reciprocal
     
 class Percent:
@@ -194,12 +194,21 @@ class Percent:
 
     def __gt__(self, other):
         return self.num > other.num
+
+    def __neg__(self):
+        return Percent(-self.num)
  
     def to_fraction(self):
         return Fraction(num, 100, False)
 
     def to_float(self):
         return self.float_percent
+
+    def to_proportion(self):
+        return Proportion(self.num,100)
+
+    def percentage(self,number):
+        return Percent(number - self.num)
     
 class Proportion:
     def __init__(self,number1,number2 = 1):
@@ -252,4 +261,4 @@ class Proportion:
         return self.float 
 
     def to_percent(self):
-        return Percent((self.float * 100)
+        return Percent(self.float * 100)
