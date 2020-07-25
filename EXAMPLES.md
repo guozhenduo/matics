@@ -45,5 +45,9 @@ Calculate(20)
 [2,5]
 >>> i.primef()
 [2,5]
->>> 
+>>> # least_cm(self,num)
+>>> u.least_cm(20)
+10
+>>> i.least_cm(45)
+5
 ```
