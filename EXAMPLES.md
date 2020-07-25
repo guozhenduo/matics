@@ -55,6 +55,7 @@ Calculate(20)
 # Class Constant
 - in class1.py 
 ```python
+>>> # __init__(self,num=20)
 >>> j=Constant()
 >>> # pi(self)
 >>> j.pi()
@@ -66,4 +67,15 @@ Calculate(20)
 >>> j.tau()
 6.28318
 >>> 
+```
+
+# Class Judge
+- in class1.py 
+```python
+>>> # __init__(self,number1,number2)
+>>> l = Judge(3,17)
+>>> # isprimer(self)
+>>> l.isprimer()
+True
+>>> u = Judge(4,8)
 ```
