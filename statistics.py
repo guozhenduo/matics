@@ -198,9 +198,18 @@ class Percentage:
     
 class Proportion:
     def __init__(self,number1,number2 = 1):
-        if isinstance(number1,str):
-            number1 = number.replace(":","")[0]
-            number2 = number.replace(":","")[1]
+        if isinstance(number1,str) or isinstance(number2,str):
+            try:
+                number1 = number[0]
+                number2 = number[-1]
+
+            except:
+                number1 = int(number1)
+                number2 = int(number)
+
+        if isinstance(number1,float) or isinstance(number1,float):
+            number1 = int(number1)
+            number2 = int(number2)
             
         self.number1 = number1
         self.number2 = number2
@@ -212,9 +221,26 @@ class Proportion:
     def __str__(self):
         return f"{self.number1}:{self.number2}"
 
+    def __add__(self,other):
+        return self.float + other.float
+
+    def __mul__(self,other):
+        return self.float * other.float
+
+    def __sub__(self,other):
+        return self.float - other.float
+
+    def __div__(self, other):
+        return self.float / other.float
+
+    def __mod__(self,other):
+        return self.float % other.float
+        
     def to_fraction(self):
         return Fraction(self.number1, self.number2)
 
     def to_float(self):
-        return self.float
+        return self.float 
 
+    def to_percentage(self):
+        return Percentage((self.float * 100)
