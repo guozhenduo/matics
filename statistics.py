@@ -210,6 +210,10 @@ class Proportion:
         if isinstance(number1,float) or isinstance(number1,float):
             number1 = int(number1)
             number2 = int(number2)
+
+        if number1 or number2 == 0:
+            return ZeroDivisionError("number1 or number2 must not be zero!")
+            exit()
             
         self.number1 = number1
         self.number2 = number2
