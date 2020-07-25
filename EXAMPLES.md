@@ -83,3 +83,12 @@ True
 >>> u.isprimer()
 False
 ```
+
+# Class Equation
+- in class1.py
+```python
+>>> from class1 import Equation
+>>> # __init__(self,x)
+>>> u = Equation("x")
+>>> u.solution("")
+```
