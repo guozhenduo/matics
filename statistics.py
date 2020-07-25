@@ -120,10 +120,10 @@ class Fraction:
     def is_improper(self):
         return self > Fraction(1)   
 
-    def to_percentage(self):
+    def to_percent(self):
         result = self.num * 100
-        percentage = Percentage(result)
-        return percentage
+        percent = Percent(result)
+        return percent
 
     def to_float(self):
         return self.num
@@ -132,7 +132,7 @@ class Fraction:
         # return  count backwards
         return self.reciprocal
     
-class Percentage:
+class Percent:
 
     def __init__(self, num):
         if num < 0:
@@ -158,30 +158,30 @@ class Percentage:
             raise TypeError("Error num!")
         
         self.num = num
-        self.float_percentage = num / 100
+        self.float_percent = num / 100
 
     def __add__(self, other):
-        return Percentage(self.num + other.num)
+        return Percent(self.num + other.num)
 
     def __repr__(self):
-        return f"Percentage({self.num})"
+        return f"Percent({self.num})"
 
     def __str__(self):
         return f"{self.num}%"
     
     def __sub__(self, other):
-        return Percentage(self.num - other.num)
+        return Percent(self.num - other.num)
 
     def __div__(self, other):
         if not other.num:
             raise ZeroDivisionError
-        return Percentage(self.num / other.num)
+        return Percent(self.num / other.num)
 
     def __mul__(self, other):
-        return Percentage(self.num * other.num)
+        return Percent(self.num * other.num)
 
     def __mod__(self, other):
-        return Percentage(self.num % other.num)
+        return Percent(self.num % other.num)
 
     def __eq__(self, other):
         return self.num == other.num
@@ -199,7 +199,7 @@ class Percentage:
         return Fraction(num, 100, False)
 
     def to_float(self):
-        return self.float_percentage
+        return self.float_percent
     
 class Proportion:
     def __init__(self,number1,number2 = 1):
@@ -251,5 +251,5 @@ class Proportion:
     def to_float(self):
         return self.float 
 
-    def to_percentage(self):
-        return Percentage((self.float * 100)
+    def to_percent(self):
+        return Percent((self.float * 100)
