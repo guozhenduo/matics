@@ -208,7 +208,7 @@ class Percent:
         return Proportion(self.num,100)
 
     def percentage(self,number):
-        return Percent(number - self.num)
+        return Percent(round(((number - self.num ) / self.num * 100),3))
     
 class Proportion:
     def __init__(self,number1,number2 = 1):
