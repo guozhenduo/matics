@@ -189,10 +189,32 @@ class Percentage:
 
     def __gt__(self, other):
         return self.num > other.num
-
+ 
     def to_fraction(self):
         return Fraction(num, 100, False)
 
     def to_float(self):
         return self.float_percentage
     
+class Proportion:
+    def __init__(self,number1,number2 = 1):
+        if isinstance(number1,str):
+            number1 = number.replace(":","")[0]
+            number2 = number.replace(":","")[1]
+            
+        self.number1 = number1
+        self.number2 = number2
+        self.float = number1 / number2
+
+    def __repr__(self):
+        return f"Proportion({self.number1,self.number2})"
+
+    def __str__(self):
+        return f"{self.number1}:{self.number2}"
+
+    def to_fraction(self):
+        return Fraction(self.number1, self.number2)
+
+    def to_float(self):
+        return self.float
+
