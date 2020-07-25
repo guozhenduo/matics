@@ -50,4 +50,20 @@ Calculate(20)
 10
 >>> i.least_cm(45)
 5
+>>> 
+```
+# Class Constant
+- in class1.py 
+```
+>>> j=Constant()
+>>> # pi(self)
+>>> j.pi()
+3.14159265358979323846
+>>> j=Constant(num=5)
+>>> j.pi()
+3.14159
+>>> # tau(self)
+>>> j.tau()
+6.28318
+>>> 
 ```
