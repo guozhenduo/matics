@@ -72,6 +72,7 @@ Calculate(20)
 # Class Judge
 - in class1.py 
 ```python
+>>> from class import Judge
 >>> # __init__(self,number1,number2)
 >>> l = Judge(3,17)
 >>> # isprimer(self)
