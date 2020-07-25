@@ -90,5 +90,16 @@ False
 >>> from class1 import Equation
 >>> # __init__(self,x)
 >>> u = Equation("x")
->>> u.solution("")
+>>> u.solution("3*x",18)
+6
+>>> u.solution("5+x",6)
+1
+```
+
+# Class Fraction
+- in statistics.py
+```python
+>>> from statistics import Fraction
+>>> # __init__(self,num1 = 0,num2 = 1,reduce=True)
+>>> 
 ```
