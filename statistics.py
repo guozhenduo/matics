@@ -41,6 +41,8 @@ class Fraction:
             self.num1 = [float, int][num1 == int(num1)](num1)
             self.num2 = [float, int][num2 == int(num2)](num2)
         self.num = self.num1 / self.num2
+        self.reciprocal = Fraction(self.num2,self.num1)
+        self.fraction = Fraction(self.num1,self.num2)
         
     def __neg__(self):
         sign = sum([self.num1 > 0, self.num2 > 0, 1]) % 2
@@ -102,6 +104,9 @@ class Fraction:
     def __round__(self, number=0):
         return Fraction(round(self.num1 / self.num2, number))
 
+    def __div__(self, other):
+        return self.fraction * other.reciprocal
+
     def __mod__(self, other):
         return (self.num1 / self.num2) % (other.num1 / other.num2 )
 
@@ -123,9 +128,9 @@ class Fraction:
     def to_float(self):
         return self.num
 
-    def count_backwards(self):
+    def reciprocal(self):
         # return  count backwards
-        return Fraction(self.num2,self.num1)
+        return self.reciprocal
     
 class Percentage:
 
