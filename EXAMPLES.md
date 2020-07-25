@@ -55,6 +55,7 @@ Calculate(20)
 # Class Constant
 - in class1.py 
 ```python
+>>> from class1 import Constant
 >>> # __init__(self,num=20)
 >>> j=Constant()
 >>> # pi(self)
@@ -79,4 +80,6 @@ Calculate(20)
 >>> l.isprimer()
 True
 >>> u = Judge(4,8)
+>>> u.isprimer()
+False
 ```
