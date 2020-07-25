@@ -253,6 +253,18 @@ class Proportion:
 
     def __mod__(self,other):
         return self.float % other.float
+
+    def __eq__(self,other):
+        return  self.float == other.float
+
+    def __ne__(self,other):
+        return self.float != other.float
+
+    def __lt__(self,other):
+        return self.float < other.float
+
+    def __gt__(self,other):
+        return self.float > other.float
         
     def to_fraction(self):
         return Fraction(self.number1, self.number2)
