@@ -211,7 +211,7 @@ class Percent:
         return Percent(round(((number - self.num ) / self.num * 100),3))
     
 class Proportion:
-    def __init__(self,number1,number2 = 1):
+    def __init__(self,number1,number2 = 1,reduce = True):
         if isinstance(number1,str) or isinstance(number2,str):
             try:
                 number1 = number[0]
@@ -225,16 +225,17 @@ class Proportion:
             number1 = int(number1)
             number2 = int(number2)
 
-        if number1 or number2 == 0:
-            return ZeroDivisionError("number1 or number2 must not be zero!")
-            exit()
-            
-        self.number1 = number1
-        self.number2 = number2
+        if number1 == 0 or number2 == 0:
+            raise ZeroDivisionError("number1 or number2 must not be zero!")
+            exit() 
+
+        div = math.gcd(number1,number2)
+        self.number1 = number1 // div 
+        self.number2 = number2  // div
         self.float = number1 / number2
 
     def __repr__(self):
-        return f"Proportion({self.number1,self.number2})"
+        return f"Proportion({self.number1},{self.number2})"
 
     def __str__(self):
         return f"{self.number1}:{self.number2}"

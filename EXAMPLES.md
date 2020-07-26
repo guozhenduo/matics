@@ -45,5 +45,61 @@ Calculate(20)
 [2,5]
 >>> i.primef()
 [2,5]
+>>> # least_cm(self,num)
+>>> u.least_cm(20)
+10
+>>> i.least_cm(45)
+5
+>>> 
+```
+# Class Constant
+- in class1.py 
+```python
+>>> from class1 import Constant
+>>> # __init__(self,num=20)
+>>> j=Constant()
+>>> # pi(self)
+>>> j.pi()
+3.14159265358979323846
+>>> j=Constant(num=5)
+>>> j.pi()
+3.14159
+>>> # tau(self)
+>>> j.tau()
+6.28318
+>>> 
+```
+
+# Class Judge
+- in class1.py 
+```python
+>>> from class import Judge
+>>> # __init__(self,number1,number2)
+>>> l = Judge(3,17)
+>>> # isprimer(self)
+>>> l.isprimer()
+True
+>>> u = Judge(4,8)
+>>> u.isprimer()
+False
+```
+
+# Class Equation
+- in class1.py
+```python
+>>> from class1 import Equation
+>>> # __init__(self,x)
+>>> u = Equation("x")
+>>> u.solution("3*x",18)
+6
+>>> u.solution("5+x",6)
+1
+```
+
+# Class Fraction
+- in statistics.py
+```python
+>>> from statistics import Fraction
+>>> # __init__(self,num1 = 0,num2 = 1,reduce=True)
 >>> 
 ```
