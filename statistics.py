@@ -229,7 +229,7 @@ class Proportion:
             raise ZeroDivisionError("number1 or number2 must not be zero!")
             exit() 
 
-        div = math.gcd(number1,number2)
+        div = math.gcd(number1,number2) if reduce == True else 1
         self.number1 = number1 // div 
         self.number2 = number2  // div
         self.float = number1 / number2
