@@ -112,4 +112,25 @@ Fraction(2,1)
 Fraction(31,42)
 >>> Fraction(62,84,False)
 Fraction(62,84)
+>>> Fraction("5/6")
+Fraction(5,6)
+>>> Fraction(4,6) + Fraction(5,6)
+Fraction(3,2)
+>>> Fraction(1,6) * Fraction(6,12)
+Fraction(1,12)
+>>> Fraction(4,7) / Fraction(5,6)
+Fraction(24,35)
+>>> Fraction(2,3) - Fraction(3,17)
+Fraction(25,51)
+>>> Fraction(3,4) == Fraction(6,8)
+True
+>>> Fraction(2,5) == Fraction(4,7)
+False
+>>> Fraction(2,5) != Fraction(6,8)
+False
+>>> Fraction(4,5) != Fraction(3,8)
+True
+>>> Fraction(4,5) > Fraction(6,7)
+False
+>>> 
 ```
