@@ -1,5 +1,4 @@
 python matrices.py
-python fraction.py
+python statistics.py
 python func1.pyx
-python factor.pyx
 python main.py
