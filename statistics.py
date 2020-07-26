@@ -119,12 +119,14 @@ class Fraction:
         return self > Fraction(1)   
 
     def to_percent(self):
-        result = self.num * 100
-        percent = Percent(result)
+        percent = Percent(self.num * 100)
         return percent
 
     def to_float(self):
         return self.num
+
+    def to_proportion(self):
+        return Proportion(self.num1,self.num2)
 
     def reciprocal(self):
         # return  reciprocal
@@ -148,10 +150,8 @@ class Percent:
 
 
         try:
-            if num == int(num):
-                num = int(num)
-            else:
-                num = float(num)
+            num = round(num)
+            
         except:
             raise TypeError("Error num!")
         

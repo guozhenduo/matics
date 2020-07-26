@@ -167,4 +167,6 @@ Fraction(7,5)
 0.5
 >>> Fraction(4,50).to_percent()
 Percent(8)
+>>> Fraction(4,50).to_proportion()
+Proportion(2,25)
 ```
