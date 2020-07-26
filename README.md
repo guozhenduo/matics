@@ -22,8 +22,7 @@ See DOCS.md
 ## Step1:
 ```bash
 $ cd matics
-$ ./install.sh
-$ ./test.sh
+$ ./build.sh
 ```
 
 # Examples
@@ -74,8 +73,7 @@ README.md in Chinese
  ## 步骤1：
 ```bash
 $ cd matics
-$ ./install.sh
-$ ./test.sh
+$ ./build.sh
 ```
 
  # 实例
