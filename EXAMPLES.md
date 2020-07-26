@@ -101,5 +101,15 @@ False
 ```python
 >>> from statistics import Fraction
 >>> # __init__(self,num1 = 0,num2 = 1,reduce=True)
->>> 
+>>> u = Fraction(4,8)
+>>> u
+Fraction(1,2)
+>>> print(u)
+1/2
+>>> Fraction(2)
+Fraction(2,1)
+>>> Fraction(62,84)
+Fraction(31,42)
+>>> Fraction(62,84,False)
+Fraction(62,84)
 ```
