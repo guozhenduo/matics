@@ -148,5 +148,23 @@ False
 True
 >>> Fraction(4,5) > Fraction(6,7)
 False
->>> 
+>>> Fraction(4,9) <  Fraction(2,3)
+True
+>>> Fraction(4,5).is_improper()
+False
+>>> Fraction(4,4).is_improper()
+True
+>>> frac = Fraction(5,7)
+>>> frac.num1
+5
+>>> frac.num2
+7
+>>> frac.reduction(Fraction(2,5))
+[Fraction(5, 35), Fraction(7, 35)]
+>>> frac.reciprocal()
+Fraction(7,5)
+>>> Fraction(1,2).to_float()
+0.5
+>>> Fraction(4,50).to_percent()
+Percent(8)
 ```
