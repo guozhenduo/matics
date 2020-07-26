@@ -14,6 +14,22 @@ Calculate(20)
 10
 >>> print(i)
 20
+>>> u == i
+False
+>>> u != i
+True
+>>> u > i
+False
+>>> u < i
+True
+>>> u + i
+30
+>>> i - u
+10
+>>> u /  i
+0.5
+>>> u * i
+200
 >>> #factor(self)
 >>> u.factor()
 [1,2,5,10]
