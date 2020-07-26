@@ -170,3 +170,10 @@ Percent(8)
 >>> Fraction(4,50).to_proportion()
 Proportion(2,25)
 ```
+
+# Class Percent
+- in statistics.py
+```python
+>>> from statistics import Percent
+>>> 
+```
