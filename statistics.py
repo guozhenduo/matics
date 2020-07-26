@@ -134,7 +134,7 @@ class Fraction:
     
 class Percent:
 
-    def __init__(self, num):
+    def __init__(self, num,rounding = True):
         if num < 0:
             raise TypeError
 
@@ -150,7 +150,7 @@ class Percent:
 
 
         try:
-            num = round(num)
+            num = round(num) if rounding == True else num
             
         except:
             raise TypeError("Error num!")
