@@ -10,7 +10,7 @@ long long step_add(long long max)  //max <= 65536
 
 
 
-int main()
+int main(void)
 {
 
 	return 0;
