@@ -41,8 +41,6 @@ class Fraction:
             self.num1 = [float, int][num1 == int(num1)](num1)
             self.num2 = [float, int][num2 == int(num2)](num2)
         self.num = self.num1 / self.num2
-        self.reciprocal = Fraction(self.num2,self.num1)
-        self.fraction = Fraction(self.num1,self.num2)
         
     def __neg__(self):
         sign = sum([self.num1 > 0, self.num2 > 0, 1]) % 2
@@ -130,7 +128,7 @@ class Fraction:
 
     def reciprocal(self):
         # return  reciprocal
-        return self.reciprocal
+        return Fraction(self.num2,self.num1)
     
 class Percent:
 
@@ -212,6 +210,15 @@ class Percent:
     
 class Proportion:
     def __init__(self,number1,number2 = 1,reduce = True):
+        if isinstance(number1,Fraction):
+            if isinstance(number2,Fraction) == False:
+                number2 = Fraction(number2)
+                
+            if isinstance(number2,Fraction):
+                spyder = Calculate(number1.num2).least_cm(number2.num2)
+                number1 = Fraction((number1.num1 * spyder)).num
+                number2 =  Fraction((number2.num1 * spyder)).num
+
         if isinstance(number1,str) or isinstance(number2,str):
             try:
                 number1 = number[0]
