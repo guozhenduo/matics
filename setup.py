@@ -14,6 +14,5 @@ setup(
 	license="MIT lincense",
 	install_requires=["Cython>=0.29.21"],
 	long_description=long_description,
-	long_description_content_type="text/markdown",
-	scripts=["main.py","matrices.py","statistics.py","class1.py","class2.py","func1setup.py"]
+	long_description_content_type="text/markdown"
 )
