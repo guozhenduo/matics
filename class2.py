@@ -15,6 +15,8 @@ class Volume:
                         args[index] = float(item)
                     else:
                         args[index] = int(item)
+                else:
+                    raise ValueError
             else:
                 raise TypeError
         self.args = args if args else [0]
