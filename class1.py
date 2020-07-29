@@ -150,7 +150,7 @@ class Judge:
         self.number1 = number1 
         self.number2 = number2
         
-    def isprimer(self):
+    def is_prime(self):
 
         """判断是否一个数为质数"""
 
