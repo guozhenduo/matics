@@ -1,2 +1,2 @@
-././shell/install.sh 
-././shell/test.sh 
+./shell/install.sh 
+./shell/test.sh 
