@@ -1,3 +1,4 @@
+from itertools import product 
 class Matrix:
     def __init__(self, arr):
 
@@ -45,13 +46,12 @@ class Matrix:
             raise IndexError
 
         prod = [[0] * other.adim for _ in range(self.length)]
-        for i in range(self.length):
+        one = range(self.length)
+        two = range(other.adim)
+        three = range(self.adim)
 
-            for j in range(other.adim):
-
-                for k in range(self.adim):
-
-                    prod[i][j] += self.arr[i][k] * other.arr[k][j]
+        for i,j,k in product(one,two,three):
+            prod[i][j] += self.arr[i][k] * other.arr[k][j]
 
         return Matrix(prod)
 
