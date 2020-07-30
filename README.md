@@ -17,7 +17,7 @@ Matics is a math module.
 
 
 # Usage
-See [DOCS.md](https://github.com/guozhenduo/matics/blob/master/DOCS.md)
+See [DOCS.md](https://github.com/guozhenduo/matics/blob/master/help/DOCS.md)
 
 ## Step1:
 ```
@@ -34,7 +34,7 @@ D:\matics> python main.py
 ```
 
 # Examples
-Pleas look at [`EXAMPLES.md`](https://github.com/guozhenduo/matics/blob/master/EXAMPLES.md)
+Pleas look at [`EXAMPLES.md`](https://github.com/guozhenduo/matics/blob/master/help/EXAMPLES.md)
 
 Author's email is [guozhenduo1@163.com](mailto:guozhenduo1@163.com). Welcome!!!
 
@@ -76,7 +76,7 @@ README.md in Chinese
 
 
 # 使用
-见[DOCS.md](https://github.com/guozhenduo/matics/blob/master/DOCS.md)
+见[DOCS.md](https://github.com/guozhenduo/matics/blob/master/help/DOCS.md)
 ## 步骤1
 ```
 操作系统: Linux
@@ -92,7 +92,7 @@ D:\matics> python main.py
 ``` 
 
  # 实例
-请看到[`EXAMPLES.md`](https://github.com/guozhenduo/matics/blob/master/EXAMPLES.md)
+请看到[`EXAMPLES.md`](https://github.com/guozhenduo/matics/blob/master/help/EXAMPLES.md)
 
 
 作者的邮箱是guozhenduo1@163.com，欢迎来信
