@@ -59,8 +59,8 @@ No plan now.
 
 # Rely-On
 - Python >= 3.8
-- Gcc >= 10.0.0
-- 
+- C99 or C11 
+- Cython >= 0.29.21
 
 README.md in Chinese
 
@@ -125,5 +125,5 @@ D:\matics> python main.py
 
 # 依赖
 - Python >= 3.8
-- Gcc >= 10.0.0
+- C99 or C11
 - Cython >= 0.29.21
