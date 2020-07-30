@@ -17,7 +17,7 @@ Matics is a math module.
 
 
 # Usage
-See DOCS.md
+See [DOCS.md](https://github.com/guozhenduo/matics/blob/master/DOCS.md)
 
 ## Step1:
 ```
@@ -76,7 +76,7 @@ README.md in Chinese
 
 
 # 使用
-
+见[DOCS.md](https://github.com/guozhenduo/matics/blob/master/DOCS.md)
 ## 步骤1
 ```
 操作系统: Linux
