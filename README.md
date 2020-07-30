@@ -89,6 +89,7 @@ D:\matics> python func1setup.py build_ext --inplace
 D:\matics> gcc -fPIC -shared step.c -o step.so
 D:\matics> mv .matics/* ./
 D:\matics> rmdir matics
+D:\matics> python func1.pyx
 D:\matics> python main.py
 ``` 
 
