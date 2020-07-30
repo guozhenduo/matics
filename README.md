@@ -20,9 +20,17 @@ Matics is a math module.
 See DOCS.md
 
 ## Step1:
-```bash
+```
+Platform: Linux
 $ cd matics
 $ ./build.sh
+Platform: Windows
+D:\matics> pip install cython 
+D:\matics> python func1setup.py build_ext --inplace
+D:\matics> gcc -fPIC -shared step.c -o step.so
+D:\matics> mv .matics/* ./
+D:\matics> rmdir matics
+D:\matics> python main.py
 ```
 
 # Examples
@@ -68,13 +76,20 @@ README.md in Chinese
 
 
 # 使用
-见DOCS.md
 
- ## 步骤1：
-```bash
+##步骤1
+```
+操作系统: Linux
 $ cd matics
 $ ./build.sh
-```
+操作系统: Windows
+D:\matics> pip install cython 
+D:\matics> python func1setup.py build_ext --inplace
+D:\matics> gcc -fPIC -shared step.c -o step.so
+D:\matics> mv .matics/* ./
+D:\matics> rmdir matics
+D:\matics> python main.py
+``` 
 
  # 实例
 请看到[`EXAMPLES.md`](https://github.com/guozhenduo/matics/blob/master/EXAMPLES.md)
