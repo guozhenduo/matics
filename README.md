@@ -77,7 +77,7 @@ README.md in Chinese
 
 # 使用
 
-##步骤1
+## 步骤1
 ```
 操作系统: Linux
 $ cd matics
