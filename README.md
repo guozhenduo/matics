@@ -11,7 +11,7 @@ Matics is a math module.
 - [Thanks-For-Who](#Thanks-For-Who)
 - [Plan](#Plan)
 - [FAQ](#FAQ)
-
+- [Rely-On](#Rely-On)
 ## Latest Version
 - 1.3.2b1
 
@@ -57,6 +57,10 @@ No plan now.
 
  - We update it every two weeks.
 
+# Rely-On
+- Python >= 3.8
+- Gcc >= 10.0.0
+- 
 
 README.md in Chinese
 
@@ -118,3 +122,8 @@ D:\matics> python main.py
 3. 我们如何更新？
 
  - 两周一次
+
+# 依赖
+- Python >= 3.8
+- Gcc >= 10.0.0
+- Cython >= 0.29.21
