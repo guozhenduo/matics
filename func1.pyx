@@ -1,3 +1,4 @@
+from math import gcd
 def composite(s):
 	list_a = []
 	for i in range(2, s + 1):
@@ -37,3 +38,6 @@ def pf(number):
 			u.append(num)
 			
 	return u
+
+def is_prime(a,b):
+	return gcd(a,b) == 0
