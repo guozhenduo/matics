@@ -15,8 +15,8 @@ class Volume:
                 if re.match('[0-9]+(.[0-9]+)?$', item):
                     if '.' in item:
                         args[index] = float(item)
-                        
-                    args[index] = int(item)
+                    else:
+                        args[index] = int(item)
                         
                 else:
                     raise ValueError
