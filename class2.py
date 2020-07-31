@@ -6,17 +6,21 @@ class Volume:
         args = list(args)
         for index in range(len(args)):
             item = args[index]
+            
             if type(item) in [int, float]:
                 if item < 0:
                     raise ValueError
+                    
             elif isinstance(item, str):
                 if re.match('[0-9]+(.[0-9]+)?$', item):
                     if '.' in item:
                         args[index] = float(item)
-                    else:
-                        args[index] = int(item)
+                        
+                    args[index] = int(item)
+                        
                 else:
                     raise ValueError
+                    
             else:
                 raise TypeError
         self.args = args if args else [0]
