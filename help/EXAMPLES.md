@@ -161,5 +161,9 @@ Proportion(2,25)
 - in statistics.py
 ```python
 >>> from statistics import Percent
->>> 
+>>> per = Percent(45)
+>>> per
+Percent(45)
+>>> print(per)
+45%
 ```
