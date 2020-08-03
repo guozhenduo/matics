@@ -135,8 +135,6 @@ class Fraction:
 class Percent:
 
     def __init__(self, num,rounding = True):
-        if num < 0:
-            raise TypeError
 
         if isinstance(num, str):
             if "%" in num:
@@ -154,6 +152,9 @@ class Percent:
             
         except:
             raise TypeError("Error num!")
+
+        if num < 0:
+            raise TypeError
         
         self.num = num
         self.float_percent = num / 100
