@@ -161,6 +161,7 @@ Proportion(2,25)
 - in statistics.py
 ```python
 >>> from statistics import Percent
+>>> # __init__(self,num,rounding = True)
 >>> per = Percent(45)
 >>> per
 Percent(45)
@@ -168,4 +169,11 @@ Percent(45)
 45%
 >>> Percent("45%")
 Percent(45)
+>>> Percent(6.466,False)
+Percent(6.466)
+>>> per + Percent(64)
+Percent(109)
+>>> per - Percent(27)
+Percent(18)
+>>> 
 ```
