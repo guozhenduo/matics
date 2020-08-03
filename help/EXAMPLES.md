@@ -175,5 +175,10 @@ Percent(6.466)
 Percent(109)
 >>> per - Percent(27)
 Percent(18)
->>> 
+>>> per * Percent(2)
+Percent(90)
+>>> per / Percent(5)
+Percent(9)
+>>> -per
+Percent(-45)
 ```
