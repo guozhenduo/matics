@@ -181,4 +181,19 @@ Percent(90)
 Percent(9)
 >>> -per
 Percent(-45)
+>>> per % Percent(12)
+Percent(9)
+>>> # and Percent class support ==,<,>,!=
+>>> # to_fraction(self)
+>>> per.to_fraction()
+Fraction(45,100)
+>>> # to_float(self)
+>>> per.to_float()
+0.45
+>>> # to_proportion(self)
+>>> per.to_proportion()
+Proportion(45,100)
+>>> # percentage(self,number)
+>>> Percent(100).percentage(50)
+Percent(-50)
 ```
