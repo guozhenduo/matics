@@ -196,4 +196,6 @@ Proportion(45,100)
 >>> # percentage(self,number)
 >>> Percent(100).percentage(50)
 Percent(-50)
+>>> Percent(50).percentage(130)
+Percent(160)
 ```
