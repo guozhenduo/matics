@@ -166,4 +166,6 @@ Proportion(2,25)
 Percent(45)
 >>> print(per)
 45%
+>>> Percent("45%")
+Percent(45)
 ```
