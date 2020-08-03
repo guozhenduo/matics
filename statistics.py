@@ -222,8 +222,8 @@ class Proportion:
 
         if isinstance(number1,str) or isinstance(number2,str):
             try:
-                number1 = number[0]
-                number2 = number[-1]
+                number1 = number1[0]
+                number2 = number1[-1]
 
             except:
                 number1 = int(number1)
