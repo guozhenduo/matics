@@ -199,3 +199,16 @@ Percent(-50)
 >>> Percent(50).percentage(130)
 Percent(160)
 ```
+
+# Class Proportion
+- in stastistics.py
+```python
+>>> from stastistics import Proportion
+>>> # __init__(self,number1,number2,reduce = True)
+>>> pro = Proportion(45,100)
+>>> pro
+Proportion(9,20)
+>>> Proportion(45,100,False)
+Proportion(45,100)
+
+```
