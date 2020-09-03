@@ -1,6 +1,6 @@
 README.md in English
 # Matics
-[![GitHub watchers](https://img.shields.io/github/watchers/guozhenduo/ctime.svg)](https://github.com/guozhenduo/ctime/watchers)
+[![GitHub watchers](https://img.shields.io/github/watchers/guozhenduo/matics.svg)](https://github.com/guozhenduo/matics/watchers)
 
 Matics is a math module.  
 
